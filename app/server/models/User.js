@@ -51,7 +51,6 @@ var profile = {
       values: 'M F O N'.split(' ')
     }
   },
-
 };
 
 // Only after confirmed
