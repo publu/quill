@@ -233,7 +233,7 @@ angular.module('reg')
                 value: user.confirmation.hardware
               }
             ]
-          },{
+          },/*{
             name: 'Hosting',
             fields: [
               {
@@ -261,7 +261,7 @@ angular.module('reg')
                 value: user.confirmation.hostNotes
               }
             ]
-          },{
+          }*//*,{
             name: 'Travel',
             fields: [
               {
@@ -288,53 +288,10 @@ angular.module('reg')
                 value: user.confirmation.notes
               }
             ]
-          }
+          }*/
         ];
       }
 
       $scope.selectUser = selectUser;
 
     }]);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
