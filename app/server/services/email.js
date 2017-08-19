@@ -149,6 +149,46 @@ controller.sendPasswordResetEmail = function(email, token, callback) {
 };
 
 /**
+ * Send an acceptance email.
+ * @param  {[type]}   email    [description]
+ * @param  {Function} callback [description]
+ */
+controller.sendAcceptanceEmail = function(email, callback){
+
+  var options = {
+    to: email,
+    subject: "[HACKDFW] - Lottery Results!"
+  };
+
+  var locals = {
+    title: 'You\'re In!',
+    body: 'We at HackDFW are excited to invite you to join HackDFW!',
+    actionUrl: ROOT_URL,
+    actionName: "Confirm Your Spot"
+  };
+
+  /**
+   * Eamil-verify takes a few template values:
+   * {
+   *   verifyUrl: the url that the user must visit to verify their account
+   * }
+   */
+  sendOne('email-link-action', options, locals, function(err, info){
+    if (err){
+      console.log(err);
+    }
+    if (info){
+      console.log(info.message);
+    }
+    if (callback){
+      callback(err, info);
+    }
+  });
+
+};
+
+
+/**
  * Send a password recovery email.
  * @param  {[type]}   email    [description]
  * @param  {Function} callback [description]
