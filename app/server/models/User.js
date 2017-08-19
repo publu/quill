@@ -71,7 +71,7 @@ var confirmation = {
   twitter: String,
   website: String,
   resume: String,
-
+/*
   needsReimbursement: Boolean,
   address: {
     name: String,
@@ -90,7 +90,7 @@ var confirmation = {
   catFriendly: Boolean,
   smokingFriendly: Boolean,
   hostNotes: String,
-
+*/
   notes: String,
 
   signatureLiability: String,
