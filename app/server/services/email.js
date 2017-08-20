@@ -24,11 +24,12 @@ var options = {
   port: EMAIL_PORT,
   secure: true,
   auth: {
-    user: EMAIL_USER,
-    pass: EMAIL_PASS
+    user: 'utdmakerspace@gmail.com',
+    pass: 'yradzadomgjedpbz'
   }
 };
 
+console.log(options);
 var transporter = nodemailer.createTransport(smtpTransport(options));
 
 var controller = {};
@@ -36,7 +37,6 @@ var controller = {};
 controller.transporter = transporter;
 
 function sendOne(templateName, options, data, callback){
-
   if (NODE_ENV === "dev") {
     console.log(templateName);
     console.log(JSON.stringify(data, "", 2));
@@ -53,6 +53,7 @@ function sendOne(templateName, options, data, callback){
         return callback(err);
       }
 
+      console.log('sending');
       transporter.sendMail({
         from: EMAIL_CONTACT,
         to: options.to,
@@ -161,18 +162,13 @@ controller.sendAcceptanceEmail = function(email, callback){
   };
 
   var locals = {
-    title: 'You\'re In!',
-    body: 'We at HackDFW are excited to invite you to join HackDFW!',
+    title: 'You\'re in!',
+    subtitle: '',
+    description: 'We are excited to invite you to our Hackathon!',
     actionUrl: ROOT_URL,
     actionName: "Confirm Your Spot"
   };
 
-  /**
-   * Eamil-verify takes a few template values:
-   * {
-   *   verifyUrl: the url that the user must visit to verify their account
-   * }
-   */
   sendOne('email-link-action', options, locals, function(err, info){
     if (err){
       console.log(err);
