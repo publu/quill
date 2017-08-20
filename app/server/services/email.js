@@ -189,6 +189,39 @@ controller.sendAcceptanceEmail = function(email, callback) {
 
 };
 
+controller.sendConfirmedEmail = function(email, callback){
+
+  var options = {
+    to: email,
+    subject: "[HACKDFW] - Confirmation"
+  };
+
+  var locals = {
+    title: 'You\'re confirmed!!',
+    body: 'Can\'t wait to see you at our Hackathon!',
+  };
+
+  /**
+   * Eamil-verify takes a few template values:
+   * {
+   *   verifyUrl: the url that the user must visit to verify their account
+   * }
+   */
+  sendOne('email-basic', options, locals, function(err, info){
+    if (err){
+      console.log(err);
+    }
+    if (info){
+      console.log(info.message);
+    }
+    if (callback){
+      callback(err, info);
+    }
+  });
+
+};
+
+
 /**
  * Send a password recovery email.
  * @param  {[type]}   email    [description]

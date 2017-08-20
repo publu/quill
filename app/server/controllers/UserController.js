@@ -350,6 +350,10 @@ UserController.updateConfirmationById = function (id, confirmation, callback){
       });
     }
 
+    if(!user.status.confirmation) {
+      Mailer.sendConfirmedEmail(user.email, callbacks)
+    }
+
     // You can only confirm acceptance if you're admitted and haven't declined.
     User.findOneAndUpdate({
       '_id': id,
