@@ -24,8 +24,8 @@ var options = {
   port: EMAIL_PORT,
   secure: true,
   auth: {
-    user: 'utdmakerspace@gmail.com',
-    pass: 'yradzadomgjedpbz'
+    user: EMAIL_USER,
+    pass: EMAIL_PASS
   }
 };
 
