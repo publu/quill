@@ -646,7 +646,7 @@ UserController.admitUser = function(id, user, callback){
   User.findOne({_id: id}, 'email', function(err, hacker) {
     if(err) return console.log(err);
     console.log(hacker.email);
-    Mailer.sendAcceptanceEmail(hacker.email, callback);
+    Mailer.sendAcceptanceEmail(hacker.email);
   })
 
   Settings.getRegistrationTimes(function(err, times){

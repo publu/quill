@@ -24,8 +24,8 @@ var options = {
   port: EMAIL_PORT,
   secure: true,
   auth: {
-    user: 'utdmakerspace@gmail.com',
-    pass: 'yradzadomgjedpbz'
+    user: EMAIL_USER,
+    pass: EMAIL_PASS
   }
 };
 
@@ -154,7 +154,7 @@ controller.sendPasswordResetEmail = function(email, token, callback) {
  * @param  {[type]}   email    [description]
  * @param  {Function} callback [description]
  */
-controller.sendAcceptanceEmail = function(email, callback){
+controller.sendAcceptanceEmail = function(email, callback) {
 
   var options = {
     to: email,
@@ -164,11 +164,17 @@ controller.sendAcceptanceEmail = function(email, callback){
   var locals = {
     title: 'You\'re in!',
     subtitle: '',
-    description: 'We are excited to invite you to our Hackathon!',
+    description: 'We at HackDFW are excited to invite you to our Hackathon!',
     actionUrl: ROOT_URL,
-    actionName: "Confirm Your Spot"
+    actionName: "Confirm your spot"
   };
 
+  /**
+   * Eamil-verify takes a few template values:
+   * {
+   *   verifyUrl: the url that the user must visit to verify their account
+   * }
+   */
   sendOne('email-link-action', options, locals, function(err, info){
     if (err){
       console.log(err);
@@ -182,7 +188,6 @@ controller.sendAcceptanceEmail = function(email, callback){
   });
 
 };
-
 
 /**
  * Send a password recovery email.
