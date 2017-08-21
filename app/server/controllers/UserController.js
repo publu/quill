@@ -350,8 +350,8 @@ UserController.updateConfirmationById = function (id, confirmation, callback){
       });
     }
 
-    if(!user.status.confirmation) {
-      Mailer.sendConfirmedEmail(user.email, callback)
+    if(!user.status.confirmed) {
+      Mailer.sendConfirmedEmail(user.email)
     }
 
     // You can only confirm acceptance if you're admitted and haven't declined.
@@ -530,7 +530,7 @@ UserController.sendVerificationEmailById = function(id, callback){
         return callback(err);
       }
       var token = user.generateEmailVerificationToken();
-      Mailer.sendVerificationEmail(user.email, token);
+      Mailer.sendVerificationEmail(user.email, token, callback);
       return callback(err, user);
   });
 };
