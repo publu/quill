@@ -103,15 +103,6 @@ angular.module('reg')
                 }
               ]
             },
-            adult: {
-              identifier: 'adult',
-              rules: [
-                {
-                  type: 'checked',
-                  prompt: 'You must be an adult, or an MIT student.'
-                }
-              ]
-            }
           }
         });
       }
