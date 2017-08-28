@@ -93,8 +93,7 @@ var confirmation = {
 */
   notes: String,
 
-  signatureLiability: String,
-  signaturePhotoRelease: String,
+  signatureParticipation: String,
   signatureCodeOfConduct: String,
 };
 

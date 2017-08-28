@@ -93,17 +93,8 @@ angular.module('reg')
                 }
               ]
             },
-            signatureLiability: {
-              identifier: 'signatureLiabilityWaiver',
-              rules: [
-                {
-                  type: 'empty',
-                  prompt: 'Please type your digital signature.'
-                }
-              ]
-            },
-            signaturePhotoRelease: {
-              identifier: 'signaturePhotoRelease',
+            signatureParticipation: {
+              identifier: 'signatureParticipationWaiver',
               rules: [
                 {
                   type: 'empty',
