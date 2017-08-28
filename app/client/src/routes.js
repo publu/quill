@@ -82,7 +82,7 @@ angular.module('reg')
           }
         }
       })
-      .state('app.team', {
+/*      .state('app.team', {
         url: "/team",
         templateUrl: "views/team/team.html",
         controller: 'TeamCtrl',
@@ -98,6 +98,8 @@ angular.module('reg')
           }
         }
       })
+
+      */
       .state('app.admin', {
         views: {
           '': {
