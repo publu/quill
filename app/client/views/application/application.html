@@ -35,12 +35,1829 @@
                  ng-model="user.profile.school">
         </div>
 
-        <div class="field" ng-show="!autoFilledSchool">
+        <div class="field" ng-show="autoFilledSchool">
           <label> School </label>
-          <input class="ui input"
-                 name="school"
+          <div class="ui search selection dropdown">
+            <input type="hidden" name="school"
+                 disabled="disabled"
+                 ng-show="autoFilledSchool"
                  ng-model="user.profile.school">
+            <i class="dropdown icon"></i>
+            <div class="default text">Select Country</div>
+            <div class="menu">
+<div class="item" data-value="A. T. Still University">A. T. Still University</div>
+<div class="item" data-value="Abilene Christian University">Abilene Christian University</div>
+<div class="item" data-value="Abraham Baldwin Agricultural College">Abraham Baldwin Agricultural College</div>
+<div class="item" data-value="Academy of Art University">Academy of Art University</div>
+<div class="item" data-value="Adams State College">Adams State College</div>
+<div class="item" data-value="Adelphi University">Adelphi University</div>
+<div class="item" data-value="Adrian College">Adrian College</div>
+<div class="item" data-value="Agnes Scott College">Agnes Scott College</div>
+<div class="item" data-value="Air Force Institute of Technology">Air Force Institute of Technology</div>
+<div class="item" data-value="Air University">Air University</div>
+<div class="item" data-value="Alabama A&M University">Alabama A&M University</div>
+<div class="item" data-value="Alabama State University">Alabama State University</div>
+<div class="item" data-value="Alaska Bible College">Alaska Bible College</div>
+<div class="item" data-value="Alaska Pacific University">Alaska Pacific University</div>
+<div class="item" data-value="Albertus Magnus College">Albertus Magnus College</div>
+<div class="item" data-value="Albion College">Albion College</div>
+<div class="item" data-value="Albright College">Albright College</div>
+<div class="item" data-value="Alcorn State University">Alcorn State University</div>
+<div class="item" data-value="Alderson-Broaddus College">Alderson-Broaddus College</div>
+<div class="item" data-value="Alfred State College, State University of New York College of Technology">Alfred State College, State University of New York College of Technology</div>
+<div class="item" data-value="Alfred University">Alfred University</div>
+<div class="item" data-value="Allegheny College">Allegheny College</div>
+<div class="item" data-value="Allen College">Allen College</div>
+<div class="item" data-value="Allen University">Allen University</div>
+<div class="item" data-value="Alliant International University">Alliant International University</div>
+<div class="item" data-value="Allied University">Allied University</div>
+<div class="item" data-value="Alma College">Alma College</div>
+<div class="item" data-value="Alvernia College">Alvernia College</div>
+<div class="item" data-value="Alverno College">Alverno College</div>
+<div class="item" data-value="Amberton University">Amberton University</div>
+<div class="item" data-value="American Academy of Art">American Academy of Art</div>
+<div class="item" data-value="American Bible College and Seminary">American Bible College and Seminary</div>
+<div class="item" data-value="American Coastline University">American Coastline University</div>
+<div class="item" data-value="The American College">The American College</div>
+<div class="item" data-value="American Global University">American Global University</div>
+<div class="item" data-value="American Graduate School of International Management">American Graduate School of International Management</div>
+<div class="item" data-value="American Institute for Computer Sciences">American Institute for Computer Sciences</div>
+<div class="item" data-value="American InterContinental University">American InterContinental University</div>
+<div class="item" data-value="American International College">American International College</div>
+<div class="item" data-value="American Military University">American Military University</div>
+<div class="item" data-value="American Public University">American Public University</div>
+<div class="item" data-value="American University">American University</div>
+<div class="item" data-value="American University of Hawaii">American University of Hawaii</div>
+<div class="item" data-value="American University of Judasim">American University of Judasim</div>
+<div class="item" data-value="Amherst College">Amherst College</div>
+<div class="item" data-value="Anderson College">Anderson College</div>
+<div class="item" data-value="Anderson University">Anderson University</div>
+<div class="item" data-value="Andrew Jackson University">Andrew Jackson University</div>
+<div class="item" data-value="Andrews University">Andrews University</div>
+<div class="item" data-value="Angelo State University">Angelo State University</div>
+<div class="item" data-value="Anna Maria College">Anna Maria College</div>
+<div class="item" data-value="Antioch College">Antioch College</div>
+<div class="item" data-value="Antioch New England Graduate School">Antioch New England Graduate School</div>
+<div class="item" data-value="Antioch University Los Angeles">Antioch University Los Angeles</div>
+<div class="item" data-value="Antioch University Santa Barbara">Antioch University Santa Barbara</div>
+<div class="item" data-value="Antioch University Seattle">Antioch University Seattle</div>
+<div class="item" data-value="Antioch University Yellow Springs OH">Antioch University Yellow Springs OH</div>
+<div class="item" data-value="Apache University">Apache University</div>
+<div class="item" data-value="Appalachian School of Law">Appalachian School of Law</div>
+<div class="item" data-value="Appalachian State University">Appalachian State University</div>
+<div class="item" data-value="Aquinas College">Aquinas College</div>
+<div class="item" data-value="Arcadia University">Arcadia University</div>
+<div class="item" data-value="Argosy University">Argosy University</div>
+<div class="item" data-value="Arizona International College">Arizona International College</div>
+<div class="item" data-value="Arizona State University">Arizona State University</div>
+<div class="item" data-value="Arizona State University West">Arizona State University West</div>
+<div class="item" data-value="Arkansas State University">Arkansas State University</div>
+<div class="item" data-value="Arkansas Tech University">Arkansas Tech University</div>
+<div class="item" data-value="Arlington Baptist College">Arlington Baptist College</div>
+<div class="item" data-value="Armstrong Atlantic State University">Armstrong Atlantic State University</div>
+<div class="item" data-value="Art Center College of Design">Art Center College of Design</div>
+<div class="item" data-value="Art Institute of Chicago">Art Institute of Chicago</div>
+<div class="item" data-value="Art Institute of Ft Lauderdale">Art Institute of Ft Lauderdale</div>
+<div class="item" data-value="The Art Institute of Phoenix">The Art Institute of Phoenix</div>
+<div class="item" data-value="The Art Institute of Southern California">The Art Institute of Southern California</div>
+<div class="item" data-value="The Art Institute of Washington">The Art Institute of Washington</div>
+<div class="item" data-value="Asbury College">Asbury College</div>
+<div class="item" data-value="Ashford University">Ashford University</div>
+<div class="item" data-value="Ashland University">Ashland University</div>
+<div class="item" data-value="Aspen University">Aspen University</div>
+<div class="item" data-value="Assumption College">Assumption College</div>
+<div class="item" data-value="Athena University">Athena University</div>
+<div class="item" data-value="Athens State College">Athens State College</div>
+<div class="item" data-value="Atlantic Union College">Atlantic Union College</div>
+<div class="item" data-value="Auburn University">Auburn University</div>
+<div class="item" data-value="Auburn University, Montgomery">Auburn University, Montgomery</div>
+<div class="item" data-value="Augsburg College">Augsburg College</div>
+<div class="item" data-value="Augusta State University">Augusta State University</div>
+<div class="item" data-value="Augustana College, Rock Island Illinois">Augustana College, Rock Island Illinois</div>
+<div class="item" data-value="Augustana College, Sioux Falls South Dakota">Augustana College, Sioux Falls South Dakota</div>
+<div class="item" data-value="Aurora University">Aurora University</div>
+<div class="item" data-value="Austin College">Austin College</div>
+<div class="item" data-value="Austin Peay State University">Austin Peay State University</div>
+<div class="item" data-value="Averett College">Averett College</div>
+<div class="item" data-value="Avila College">Avila College</div>
+<div class="item" data-value="Azusa Pacific University">Azusa Pacific University</div>
+<div class="item" data-value="Babson College">Babson College</div>
+<div class="item" data-value="Bacone College">Bacone College</div>
+<div class="item" data-value="Baker College">Baker College</div>
+<div class="item" data-value="Baker University">Baker University</div>
+<div class="item" data-value="Baldwin-Wallace College">Baldwin-Wallace College</div>
+<div class="item" data-value="Ball State University">Ball State University</div>
+<div class="item" data-value="Baltimore Hebrew University">Baltimore Hebrew University</div>
+<div class="item" data-value="Bank Street College of Education">Bank Street College of Education</div>
+<div class="item" data-value="Baptist Bible College and Seminary">Baptist Bible College and Seminary</div>
+<div class="item" data-value="The Baptist College of Florida">The Baptist College of Florida</div>
+<div class="item" data-value="Barber-Scotia College">Barber-Scotia College</div>
+<div class="item" data-value="Bard College">Bard College</div>
+<div class="item" data-value="Barclay College">Barclay College</div>
+<div class="item" data-value="Barnard College">Barnard College</div>
+<div class="item" data-value="Barrington University">Barrington University</div>
+<div class="item" data-value="Barry University">Barry University</div>
+<div class="item" data-value="Barton College">Barton College</div>
+<div class="item" data-value="Bastyr University">Bastyr University</div>
+<div class="item" data-value="Bates College">Bates College</div>
+<div class="item" data-value="Bay Path College">Bay Path College</div>
+<div class="item" data-value="Baylor College of Dentistry">Baylor College of Dentistry</div>
+<div class="item" data-value="Baylor College of Medicine">Baylor College of Medicine</div>
+<div class="item" data-value="Baylor University">Baylor University</div>
+<div class="item" data-value="Belhaven College">Belhaven College</div>
+<div class="item" data-value="Bellarmine University">Bellarmine University</div>
+<div class="item" data-value="Bellevue University">Bellevue University</div>
+<div class="item" data-value="Belmont Abbey College">Belmont Abbey College</div>
+<div class="item" data-value="Belmont University">Belmont University</div>
+<div class="item" data-value="Beloit College">Beloit College</div>
+<div class="item" data-value="Bemidji State University">Bemidji State University</div>
+<div class="item" data-value="Benedict College">Benedict College</div>
+<div class="item" data-value="Benedictine College">Benedictine College</div>
+<div class="item" data-value="Benedictine University">Benedictine University</div>
+<div class="item" data-value="Bennett College">Bennett College</div>
+<div class="item" data-value="Bennington College">Bennington College</div>
+<div class="item" data-value="Bentley College">Bentley College</div>
+<div class="item" data-value="Berea College">Berea College</div>
+<div class="item" data-value="Berkeley College">Berkeley College</div>
+<div class="item" data-value="Berklee College of Music">Berklee College of Music</div>
+<div class="item" data-value="Berry College">Berry College</div>
+<div class="item" data-value="Bethany Bible College">Bethany Bible College</div>
+<div class="item" data-value="Bethany College, West Virginia">Bethany College, West Virginia</div>
+<div class="item" data-value="Bethany College, Lindsborg, KS">Bethany College, Lindsborg, KS</div>
+<div class="item" data-value="Bethany College, Scotts Valley, CA">Bethany College, Scotts Valley, CA</div>
+<div class="item" data-value="Bethany Lutheran College">Bethany Lutheran College</div>
+<div class="item" data-value="Bethel College and Seminary, Saint Paul Minnesota">Bethel College and Seminary, Saint Paul Minnesota</div>
+<div class="item" data-value="Bethel College, McKenzie, Tennessee">Bethel College, McKenzie, Tennessee</div>
+<div class="item" data-value="Bethel College, Mishawaka, Indiana">Bethel College, Mishawaka, Indiana</div>
+<div class="item" data-value="Bethel College, Newton, Kansas">Bethel College, Newton, Kansas</div>
+<div class="item" data-value="Bethune-Cookman College">Bethune-Cookman College</div>
+<div class="item" data-value="Bienville University">Bienville University</div>
+<div class="item" data-value="Biola University">Biola University</div>
+<div class="item" data-value="Birmingham-Southern College">Birmingham-Southern College</div>
+<div class="item" data-value="Bismarck State College">Bismarck State College</div>
+<div class="item" data-value="Black Hills State University">Black Hills State University</div>
+<div class="item" data-value="Blackburn College">Blackburn College</div>
+<div class="item" data-value="Bloomfield College">Bloomfield College</div>
+<div class="item" data-value="Bloomsburg University">Bloomsburg University</div>
+<div class="item" data-value="Blue Mountain College">Blue Mountain College</div>
+<div class="item" data-value="Bluefield College">Bluefield College</div>
+<div class="item" data-value="Bluefield State College">Bluefield State College</div>
+<div class="item" data-value="Bluffton University">Bluffton University</div>
+<div class="item" data-value="Bob Jones University">Bob Jones University</div>
+<div class="item" data-value="Boise State University">Boise State University</div>
+<div class="item" data-value="The Boston Architectural Center">The Boston Architectural Center</div>
+<div class="item" data-value="Boston College">Boston College</div>
+<div class="item" data-value="Boston Conservatory">Boston Conservatory</div>
+<div class="item" data-value="Boston University">Boston University</div>
+<div class="item" data-value="Bowdoin College">Bowdoin College</div>
+<div class="item" data-value="Bowie State University">Bowie State University</div>
+<div class="item" data-value="Bowling Green State University">Bowling Green State University</div>
+<div class="item" data-value="Bradford College">Bradford College</div>
+<div class="item" data-value="Bradley University">Bradley University</div>
+<div class="item" data-value="Brandeis University">Brandeis University</div>
+<div class="item" data-value="Brenau University">Brenau University</div>
+<div class="item" data-value="Brevard College">Brevard College</div>
+<div class="item" data-value="Brewton-Parker College">Brewton-Parker College</div>
+<div class="item" data-value="Briar Cliff University">Briar Cliff University</div>
+<div class="item" data-value="Bridgewater College">Bridgewater College</div>
+<div class="item" data-value="Bridgewater State College">Bridgewater State College</div>
+<div class="item" data-value="Brigham Young University">Brigham Young University</div>
+<div class="item" data-value="Brigham Young University Hawaii">Brigham Young University Hawaii</div>
+<div class="item" data-value="Brigham Young University Idaho">Brigham Young University Idaho</div>
+<div class="item" data-value="Brooklyn College">Brooklyn College</div>
+<div class="item" data-value="Brooklyn Law School">Brooklyn Law School</div>
+<div class="item" data-value="Brooks Institute">Brooks Institute</div>
+<div class="item" data-value="Brown University">Brown University</div>
+<div class="item" data-value="Bryan College">Bryan College</div>
+<div class="item" data-value="Bryant College">Bryant College</div>
+<div class="item" data-value="Bryn Mawr College">Bryn Mawr College</div>
+<div class="item" data-value="Bucknell University">Bucknell University</div>
+<div class="item" data-value="Buena Vista University">Buena Vista University</div>
+<div class="item" data-value="Butler University">Butler University</div>
+<div class="item" data-value="C. R. Drew University of Medicine and Science">C. R. Drew University of Medicine and Science</div>
+<div class="item" data-value="Cabarrus College of Health Sciences">Cabarrus College of Health Sciences</div>
+<div class="item" data-value="Cabrini College">Cabrini College</div>
+<div class="item" data-value="Caldwell College">Caldwell College</div>
+<div class="item" data-value="California Baptist University">California Baptist University</div>
+<div class="item" data-value="California Coast University">California Coast University</div>
+<div class="item" data-value="California College of the Arts">California College of the Arts</div>
+<div class="item" data-value="California College for Health Sciences">California College for Health Sciences</div>
+<div class="item" data-value="California College of Podiatric Medicine">California College of Podiatric Medicine</div>
+<div class="item" data-value="California Institute of the Arts">California Institute of the Arts</div>
+<div class="item" data-value="California Institute for Human Science">California Institute for Human Science</div>
+<div class="item" data-value="California Institute of Integral Studies">California Institute of Integral Studies</div>
+<div class="item" data-value="California Institute of Technology">California Institute of Technology</div>
+<div class="item" data-value="California Lutheran University">California Lutheran University</div>
+<div class="item" data-value="The California Maritime Academy">The California Maritime Academy</div>
+<div class="item" data-value="California National University for Advanced Studies">California National University for Advanced Studies</div>
+<div class="item" data-value="California Pacific University">California Pacific University</div>
+<div class="item" data-value="California Polytechnic State University, San Luis Obispo">California Polytechnic State University, San Luis Obispo</div>
+<div class="item" data-value="California State Polytechnic University, Pomona">California State Polytechnic University, Pomona</div>
+<div class="item" data-value="California State University, Bakersfield">California State University, Bakersfield</div>
+<div class="item" data-value="California State University, Channel Islands">California State University, Channel Islands</div>
+<div class="item" data-value="California State University, Chico">California State University, Chico</div>
+<div class="item" data-value="California State University, Dominguez Hills">California State University, Dominguez Hills</div>
+<div class="item" data-value="California State University, Fresno">California State University, Fresno</div>
+<div class="item" data-value="California State University, Fullerton">California State University, Fullerton</div>
+<div class="item" data-value="California State University, Hayward">California State University, Hayward</div>
+<div class="item" data-value="California State University, Long Beach">California State University, Long Beach</div>
+<div class="item" data-value="California State University, Los Angeles">California State University, Los Angeles</div>
+<div class="item" data-value="California State University, Monterey">California State University, Monterey</div>
+<div class="item" data-value="California State University, Northridge">California State University, Northridge</div>
+<div class="item" data-value="California State University, Sacramento">California State University, Sacramento</div>
+<div class="item" data-value="California State University, San Bernardino">California State University, San Bernardino</div>
+<div class="item" data-value="California State University, San Marcos">California State University, San Marcos</div>
+<div class="item" data-value="California State University, Stanislaus">California State University, Stanislaus</div>
+<div class="item" data-value="California University of Pennsylvania">California University of Pennsylvania</div>
+<div class="item" data-value="Calumet College of St. Joseph">Calumet College of St. Joseph</div>
+<div class="item" data-value="Calvin College">Calvin College</div>
+<div class="item" data-value="Cambridge College">Cambridge College</div>
+<div class="item" data-value="Cameron University">Cameron University</div>
+<div class="item" data-value="Campbell University">Campbell University</div>
+<div class="item" data-value="Campbellsville University">Campbellsville University</div>
+<div class="item" data-value="Canisius College">Canisius College</div>
+<div class="item" data-value="Canyon College">Canyon College</div>
+<div class="item" data-value="Capella University">Capella University</div>
+<div class="item" data-value="Capital University">Capital University</div>
+<div class="item" data-value="Capitol College">Capitol College</div>
+<div class="item" data-value="Cardinal Stritch University">Cardinal Stritch University</div>
+<div class="item" data-value="Carleton College">Carleton College</div>
+<div class="item" data-value="Carlos Albizu University">Carlos Albizu University</div>
+<div class="item" data-value="Carlow College">Carlow College</div>
+<div class="item" data-value="Carnegie Institution of Washington">Carnegie Institution of Washington</div>
+<div class="item" data-value="Carnegie Mellon University">Carnegie Mellon University</div>
+<div class="item" data-value="Carrol University">Carrol University</div>
+<div class="item" data-value="Carroll College, Helena, MT">Carroll College, Helena, MT</div>
+<div class="item" data-value="Carson-Newman College">Carson-Newman College</div>
+<div class="item" data-value="Carthage College">Carthage College</div>
+<div class="item" data-value="Case Western Reserve University">Case Western Reserve University</div>
+<div class="item" data-value="Castleton State College">Castleton State College</div>
+<div class="item" data-value="Catawba College">Catawba College</div>
+<div class="item" data-value="The Catholic University of America">The Catholic University of America</div>
+<div class="item" data-value="Cazenovia College">Cazenovia College</div>
+<div class="item" data-value="Cedar Crest College">Cedar Crest College</div>
+<div class="item" data-value="Cedarville University">Cedarville University</div>
+<div class="item" data-value="Centenary College of Louisiana">Centenary College of Louisiana</div>
+<div class="item" data-value="Centenary College of New Jersey">Centenary College of New Jersey</div>
+<div class="item" data-value="Center for Creative Studies College of Art and Design">Center for Creative Studies College of Art and Design</div>
+<div class="item" data-value="Central Bible College">Central Bible College</div>
+<div class="item" data-value="Central Christian College of the Bible">Central Christian College of the Bible</div>
+<div class="item" data-value="Central Christian College of Kansas">Central Christian College of Kansas</div>
+<div class="item" data-value="Central College">Central College</div>
+<div class="item" data-value="Central Connecticut State University">Central Connecticut State University</div>
+<div class="item" data-value="Central Methodist College">Central Methodist College</div>
+<div class="item" data-value="Central Michigan University">Central Michigan University</div>
+<div class="item" data-value="Central Missouri State University">Central Missouri State University</div>
+<div class="item" data-value="Central Pennsylvania College">Central Pennsylvania College</div>
+<div class="item" data-value="Central State University">Central State University</div>
+<div class="item" data-value="Central Washington University">Central Washington University</div>
+<div class="item" data-value="Centre College, Danville Kentucky">Centre College, Danville Kentucky</div>
+<div class="item" data-value="Century University">Century University</div>
+<div class="item" data-value="Chadron State College">Chadron State College</div>
+<div class="item" data-value="Chadwick University">Chadwick University</div>
+<div class="item" data-value="Chaminade University of Honolulu, Hawaii">Chaminade University of Honolulu, Hawaii</div>
+<div class="item" data-value="Champlain College">Champlain College</div>
+<div class="item" data-value="Chapman University">Chapman University</div>
+<div class="item" data-value="Charles R. Drew University of Medicine and Science">Charles R. Drew University of Medicine and Science</div>
+<div class="item" data-value="Charleston Southern">Charleston Southern</div>
+<div class="item" data-value="Charter Oak State College">Charter Oak State College</div>
+<div class="item" data-value="Chatham College">Chatham College</div>
+<div class="item" data-value="Cheyney University of Pennsylvania">Cheyney University of Pennsylvania</div>
+<div class="item" data-value="Chicago-Kent College of Law">Chicago-Kent College of Law</div>
+<div class="item" data-value="Chicago School of Professional Psychology">Chicago School of Professional Psychology</div>
+<div class="item" data-value="Chicago State University">Chicago State University</div>
+<div class="item" data-value="Chowan College">Chowan College</div>
+<div class="item" data-value="Christendom College">Christendom College</div>
+<div class="item" data-value="Christian Bible College and Seminary">Christian Bible College and Seminary</div>
+<div class="item" data-value="Christian Brothers University">Christian Brothers University</div>
+<div class="item" data-value="Christopher Newport University">Christopher Newport University</div>
+<div class="item" data-value="Circleville Bible College">Circleville Bible College</div>
+<div class="item" data-value="The Citadel">The Citadel</div>
+<div class="item" data-value="City Colleges of Chicago">City Colleges of Chicago</div>
+<div class="item" data-value="City University, Bellevue Washington">City University, Bellevue Washington</div>
+<div class="item" data-value="City University of Los Angeles">City University of Los Angeles</div>
+<div class="item" data-value="City University of New York">City University of New York</div>
+<div class="item" data-value="Claflin College">Claflin College</div>
+<div class="item" data-value="Claremont Graduate University">Claremont Graduate University</div>
+<div class="item" data-value="Claremont McKenna College">Claremont McKenna College</div>
+<div class="item" data-value="Clarion University">Clarion University</div>
+<div class="item" data-value="Clark Atlanta University">Clark Atlanta University</div>
+<div class="item" data-value="Clark College">Clark College</div>
+<div class="item" data-value="Clark University">Clark University</div>
+<div class="item" data-value="Clarke College">Clarke College</div>
+<div class="item" data-value="Clarkson University">Clarkson University</div>
+<div class="item" data-value="Clayton College and State University">Clayton College and State University</div>
+<div class="item" data-value="Clayton College of Natural Health">Clayton College of Natural Health</div>
+<div class="item" data-value="Clemson University">Clemson University</div>
+<div class="item" data-value="Clear Creek Baptist Bible College">Clear Creek Baptist Bible College</div>
+<div class="item" data-value="Clearwater Christian College">Clearwater Christian College</div>
+<div class="item" data-value="Cleary University">Cleary University</div>
+<div class="item" data-value="Cleveland Chiropractic College">Cleveland Chiropractic College</div>
+<div class="item" data-value="Cleveland Institute of Art">Cleveland Institute of Art</div>
+<div class="item" data-value="Cleveland Institute of Music">Cleveland Institute of Music</div>
+<div class="item" data-value="Cleveland State University">Cleveland State University</div>
+<div class="item" data-value="Clinch Valley College">Clinch Valley College</div>
+<div class="item" data-value="Coastal Carolina University">Coastal Carolina University</div>
+<div class="item" data-value="Coe College">Coe College</div>
+<div class="item" data-value="Cogswell Polytechnical College">Cogswell Polytechnical College</div>
+<div class="item" data-value="Coker College">Coker College</div>
+<div class="item" data-value="Colby College">Colby College</div>
+<div class="item" data-value="Colby-Sawyer College">Colby-Sawyer College</div>
+<div class="item" data-value="Colgate University">Colgate University</div>
+<div class="item" data-value="Coleman College">Coleman College</div>
+<div class="item" data-value="College of the Atlantic">College of the Atlantic</div>
+<div class="item" data-value="College of Charleston">College of Charleston</div>
+<div class="item" data-value="College of Eastern Utah">College of Eastern Utah</div>
+<div class="item" data-value="College of the Holy Cross">College of the Holy Cross</div>
+<div class="item" data-value="College of Idaho">College of Idaho</div>
+<div class="item" data-value="The College of Insurance">The College of Insurance</div>
+<div class="item" data-value="The College of Metaphysical Studies">The College of Metaphysical Studies</div>
+<div class="item" data-value="College Misericordia">College Misericordia</div>
+<div class="item" data-value="College of Mount Saint Joseph">College of Mount Saint Joseph</div>
+<div class="item" data-value="College of Mount Saint Vincent">College of Mount Saint Vincent</div>
+<div class="item" data-value="The College of New Jersey">The College of New Jersey</div>
+<div class="item" data-value="College of New Rochelle">College of New Rochelle</div>
+<div class="item" data-value="College of Notre Dame of Maryland">College of Notre Dame of Maryland</div>
+<div class="item" data-value="College of the Ozarks">College of the Ozarks</div>
+<div class="item" data-value="College of Saint Benedict">College of Saint Benedict</div>
+<div class="item" data-value="College of Saint Catherine">College of Saint Catherine</div>
+<div class="item" data-value="College of Saint Elizabeth">College of Saint Elizabeth</div>
+<div class="item" data-value="College of Saint Joseph">College of Saint Joseph</div>
+<div class="item" data-value="College of Saint Mary">College of Saint Mary</div>
+<div class="item" data-value="College of Saint Scholastica">College of Saint Scholastica</div>
+<div class="item" data-value="The College of Saint Thomas More">The College of Saint Thomas More</div>
+<div class="item" data-value="The College of Saint Rose">The College of Saint Rose</div>
+<div class="item" data-value="The College of Santa Fe">The College of Santa Fe</div>
+<div class="item" data-value="College of William and Mary">College of William and Mary</div>
+<div class="item" data-value="The College of Wooster">The College of Wooster</div>
+<div class="item" data-value="Colorado Christian University">Colorado Christian University</div>
+<div class="item" data-value="Colorado College">Colorado College</div>
+<div class="item" data-value="Colorado School of Mines">Colorado School of Mines</div>
+<div class="item" data-value="Colorado State University">Colorado State University</div>
+<div class="item" data-value="Colorado State - Pueblo">Colorado State - Pueblo</div>
+<div class="item" data-value="Colorado Technical University">Colorado Technical University</div>
+<div class="item" data-value="Columbia College">Columbia College</div>
+<div class="item" data-value="Columbia College, South Carolina">Columbia College, South Carolina</div>
+<div class="item" data-value="Columbia College of Missouri">Columbia College of Missouri</div>
+<div class="item" data-value="Columbia International University">Columbia International University</div>
+<div class="item" data-value="Columbia Southern University">Columbia Southern University</div>
+<div class="item" data-value="Columbia Union College">Columbia Union College</div>
+<div class="item" data-value="Columbia University">Columbia University</div>
+<div class="item" data-value="Columbus College of Art and Design">Columbus College of Art and Design</div>
+<div class="item" data-value="Columbus State University">Columbus State University</div>
+<div class="item" data-value="Concord College">Concord College</div>
+<div class="item" data-value="Concordia College, Ann Arbor Michigan">Concordia College, Ann Arbor Michigan</div>
+<div class="item" data-value="Concordia College, Austin Texas">Concordia College, Austin Texas</div>
+<div class="item" data-value="Concordia College, Bronxville, New York">Concordia College, Bronxville, New York</div>
+<div class="item" data-value="Concordia College, Moorhead Minnesota">Concordia College, Moorhead Minnesota</div>
+<div class="item" data-value="Concordia College, Saint Paul Minnesota">Concordia College, Saint Paul Minnesota</div>
+<div class="item" data-value="Concordia College, Selma Alabama">Concordia College, Selma Alabama</div>
+<div class="item" data-value="Concordia College, Seward Nebraska">Concordia College, Seward Nebraska</div>
+<div class="item" data-value="Concordia University, Irvine California">Concordia University, Irvine California</div>
+<div class="item" data-value="Concordia University, Mequon Wisconsin">Concordia University, Mequon Wisconsin</div>
+<div class="item" data-value="Concordia University, Portland Oregon">Concordia University, Portland Oregon</div>
+<div class="item" data-value="Concordia University, Chicago">Concordia University, Chicago</div>
+<div class="item" data-value="Connecticut College">Connecticut College</div>
+<div class="item" data-value="Converse College">Converse College</div>
+<div class="item" data-value="Conway School of Landscape Design">Conway School of Landscape Design</div>
+<div class="item" data-value="Cooper Union for the Advancement of Science and Art">Cooper Union for the Advancement of Science and Art</div>
+<div class="item" data-value="Coppin State College">Coppin State College</div>
+<div class="item" data-value="Cornell College, Iowa">Cornell College, Iowa</div>
+<div class="item" data-value="Corcoran College of Art + Design">Corcoran College of Art + Design</div>
+<div class="item" data-value="Cornell University">Cornell University</div>
+<div class="item" data-value="Cornerstone University">Cornerstone University</div>
+<div class="item" data-value="Cornish College of the Arts">Cornish College of the Arts</div>
+<div class="item" data-value="Cottey College">Cottey College</div>
+<div class="item" data-value="Covenant College">Covenant College</div>
+<div class="item" data-value="Creighton University">Creighton University</div>
+<div class="item" data-value="Crichton College">Crichton College</div>
+<div class="item" data-value="Crossroads College">Crossroads College</div>
+<div class="item" data-value="Crown College">Crown College</div>
+<div class="item" data-value="Culver-Stockton College">Culver-Stockton College</div>
+<div class="item" data-value="Cumberland College">Cumberland College</div>
+<div class="item" data-value="Cumberland University">Cumberland University</div>
+<div class="item" data-value="Curry College">Curry College</div>
+<div class="item" data-value="Cypress College">Cypress College</div>
+<div class="item" data-value="Daemen College">Daemen College</div>
+<div class="item" data-value="Dakota State University">Dakota State University</div>
+<div class="item" data-value="Dakota Wesleyan University">Dakota Wesleyan University</div>
+<div class="item" data-value="Dallas Baptist University">Dallas Baptist University</div>
+<div class="item" data-value="Dallas Theological Seminary">Dallas Theological Seminary</div>
+<div class="item" data-value="Dana College">Dana College</div>
+<div class="item" data-value="Daniel Webster College">Daniel Webster College</div>
+<div class="item" data-value="Dartmouth College">Dartmouth College</div>
+<div class="item" data-value="Davenport College">Davenport College</div>
+<div class="item" data-value="Davidson College">Davidson College</div>
+<div class="item" data-value="Davis and Elkins College">Davis and Elkins College</div>
+<div class="item" data-value="Davis College">Davis College</div>
+<div class="item" data-value="Dawson College">Dawson College</div>
+<div class="item" data-value="Dean College">Dean College</div>
+<div class="item" data-value="Deep Springs College">Deep Springs College</div>
+<div class="item" data-value="Defiance College">Defiance College</div>
+<div class="item" data-value="Delaware State University">Delaware State University</div>
+<div class="item" data-value="Delaware Valley College">Delaware Valley College</div>
+<div class="item" data-value="Delta College">Delta College</div>
+<div class="item" data-value="Delta State University">Delta State University</div>
+<div class="item" data-value="Denison University">Denison University</div>
+<div class="item" data-value="Denver Seminary">Denver Seminary</div>
+<div class="item" data-value="DePaul University">DePaul University</div>
+<div class="item" data-value="DePauw University">DePauw University</div>
+<div class="item" data-value="DeSales University">DeSales University</div>
+<div class="item" data-value="DeVry University">DeVry University</div>
+<div class="item" data-value="DeVry University, Columbus">DeVry University, Columbus</div>
+<div class="item" data-value="Diablo Valley College">Diablo Valley College</div>
+<div class="item" data-value="Dickinson College">Dickinson College</div>
+<div class="item" data-value="Dickinson State University">Dickinson State University</div>
+<div class="item" data-value="Digital Media Arts College">Digital Media Arts College</div>
+<div class="item" data-value="Dillard University">Dillard University</div>
+<div class="item" data-value="Dixie State College">Dixie State College</div>
+<div class="item" data-value="Doane College">Doane College</div>
+<div class="item" data-value="Dominican College">Dominican College</div>
+<div class="item" data-value="Dominican University">Dominican University</div>
+<div class="item" data-value="Dominican University of California">Dominican University of California</div>
+<div class="item" data-value="Dordt College">Dordt College</div>
+<div class="item" data-value="Dowling College">Dowling College</div>
+<div class="item" data-value="Drake University">Drake University</div>
+<div class="item" data-value="Drew University">Drew University</div>
+<div class="item" data-value="Drexel University">Drexel University</div>
+<div class="item" data-value="Drury University">Drury University</div>
+<div class="item" data-value="Duke University">Duke University</div>
+<div class="item" data-value="Duquesne University">Duquesne University</div>
+<div class="item" data-value="D'Youville College">D'Youville College</div>
+<div class="item" data-value="Earlham College">Earlham College</div>
+<div class="item" data-value="East Carolina University">East Carolina University</div>
+<div class="item" data-value="East Central University, Ada Oklahoma">East Central University, Ada Oklahoma</div>
+<div class="item" data-value="East Stroudsburg State University">East Stroudsburg State University</div>
+<div class="item" data-value="East Tennessee State University">East Tennessee State University</div>
+<div class="item" data-value="East Texas Baptist University">East Texas Baptist University</div>
+<div class="item" data-value="East-West University">East-West University</div>
+<div class="item" data-value="Eastern College">Eastern College</div>
+<div class="item" data-value="Eastern Connecticut State University">Eastern Connecticut State University</div>
+<div class="item" data-value="Eastern Illinois University">Eastern Illinois University</div>
+<div class="item" data-value="Eastern Kentucky University">Eastern Kentucky University</div>
+<div class="item" data-value="Eastern Mennonite University">Eastern Mennonite University</div>
+<div class="item" data-value="Eastern Michigan University">Eastern Michigan University</div>
+<div class="item" data-value="Eastern Nazarene College">Eastern Nazarene College</div>
+<div class="item" data-value="Eastern New Mexico University">Eastern New Mexico University</div>
+<div class="item" data-value="Eastern Oregon University">Eastern Oregon University</div>
+<div class="item" data-value="Eastern Washington University">Eastern Washington University</div>
+<div class="item" data-value="Eckerd College">Eckerd College</div>
+<div class="item" data-value="Edgewood College">Edgewood College</div>
+<div class="item" data-value="Edinboro University of Pennsylvania">Edinboro University of Pennsylvania</div>
+<div class="item" data-value="Edward Waters College">Edward Waters College</div>
+<div class="item" data-value="Elizabeth City State University">Elizabeth City State University</div>
+<div class="item" data-value="Elizabethtown College">Elizabethtown College</div>
+<div class="item" data-value="Elmhurst College">Elmhurst College</div>
+<div class="item" data-value="Elmira College">Elmira College</div>
+<div class="item" data-value="Elms College">Elms College</div>
+<div class="item" data-value="Elon University">Elon University</div>
+<div class="item" data-value="Embry-Riddle Aeronautical University">Embry-Riddle Aeronautical University</div>
+<div class="item" data-value="Emerson College">Emerson College</div>
+<div class="item" data-value="Emmanuel College">Emmanuel College</div>
+<div class="item" data-value="Emmaus Bible College">Emmaus Bible College</div>
+<div class="item" data-value="Emory University">Emory University</div>
+<div class="item" data-value="Emory & Henry College">Emory & Henry College</div>
+<div class="item" data-value="Empire State College">Empire State College</div>
+<div class="item" data-value="Emporia State University">Emporia State University</div>
+<div class="item" data-value="Endicott College">Endicott College</div>
+<div class="item" data-value="Erskine College">Erskine College</div>
+<div class="item" data-value="Eureka College">Eureka College</div>
+<div class="item" data-value="Evangel University">Evangel University</div>
+<div class="item" data-value="Everglades University">Everglades University</div>
+<div class="item" data-value="Evergreen State College">Evergreen State College</div>
+<div class="item" data-value="Excelsior College">Excelsior College</div>
+<div class="item" data-value="Fairfield University">Fairfield University</div>
+<div class="item" data-value="Fairleigh Dickinson University">Fairleigh Dickinson University</div>
+<div class="item" data-value="Fairmont State College">Fairmont State College</div>
+<div class="item" data-value="Faith Baptist Bible College and Theological Seminary">Faith Baptist Bible College and Theological Seminary</div>
+<div class="item" data-value="Faulkner University">Faulkner University</div>
+<div class="item" data-value="Fayetteville State University">Fayetteville State University</div>
+<div class="item" data-value="Felician College">Felician College</div>
+<div class="item" data-value="Ferris State University">Ferris State University</div>
+<div class="item" data-value="Ferrum College">Ferrum College</div>
+<div class="item" data-value="Fielding Graduate University">Fielding Graduate University</div>
+<div class="item" data-value="Finch University of Health Sciences/The Chicago Medical School">Finch University of Health Sciences/The Chicago Medical School</div>
+<div class="item" data-value="Finlandia University">Finlandia University</div>
+<div class="item" data-value="Fisk University">Fisk University</div>
+<div class="item" data-value="Fitchburg State College">Fitchburg State College</div>
+<div class="item" data-value="Flagler College">Flagler College</div>
+<div class="item" data-value="Florida A & M University">Florida A & M University</div>
+<div class="item" data-value="Florida Atlantic University">Florida Atlantic University</div>
+<div class="item" data-value="Florida Christian College">Florida Christian College</div>
+<div class="item" data-value="Florida College">Florida College</div>
+<div class="item" data-value="Florida Gulf Coast University">Florida Gulf Coast University</div>
+<div class="item" data-value="Florida Institute of Technology">Florida Institute of Technology</div>
+<div class="item" data-value="Florida International University">Florida International University</div>
+<div class="item" data-value="Florida Memorial College">Florida Memorial College</div>
+<div class="item" data-value="Florida Metropolitan University">Florida Metropolitan University</div>
+<div class="item" data-value="Florida Southern College">Florida Southern College</div>
+<div class="item" data-value="Florida State University">Florida State University</div>
+<div class="item" data-value="Fontbonne University">Fontbonne University</div>
+<div class="item" data-value="Fordham University">Fordham University</div>
+<div class="item" data-value="Forest Institute of Professional Psychology">Forest Institute of Professional Psychology</div>
+<div class="item" data-value="Fort Hays State University">Fort Hays State University</div>
+<div class="item" data-value="Fort Lewis College">Fort Lewis College</div>
+<div class="item" data-value="Fort Valley State University">Fort Valley State University</div>
+<div class="item" data-value="Framingham State College">Framingham State College</div>
+<div class="item" data-value="Francis Marion University">Francis Marion University</div>
+<div class="item" data-value="Franciscan University of Steubenville">Franciscan University of Steubenville</div>
+<div class="item" data-value="Franklin and Marshall College">Franklin and Marshall College</div>
+<div class="item" data-value="Franklin College">Franklin College</div>
+<div class="item" data-value="Franklin Pierce University">Franklin Pierce University</div>
+<div class="item" data-value="Franklin Pierce Law Center">Franklin Pierce Law Center</div>
+<div class="item" data-value="Franklin University">Franklin University</div>
+<div class="item" data-value="Franklin W. Olin College of Engineering">Franklin W. Olin College of Engineering</div>
+<div class="item" data-value="Freed-Hardeman University">Freed-Hardeman University</div>
+<div class="item" data-value="Freewill Baptist Bible College">Freewill Baptist Bible College</div>
+<div class="item" data-value="Fresno Pacific University">Fresno Pacific University</div>
+<div class="item" data-value="Friends University">Friends University</div>
+<div class="item" data-value="Frostburg State University">Frostburg State University</div>
+<div class="item" data-value="Full Sail University">Full Sail University</div>
+<div class="item" data-value="Fuller Theological Seminary">Fuller Theological Seminary</div>
+<div class="item" data-value="Fullerton College">Fullerton College</div>
+<div class="item" data-value="Furman University">Furman University</div>
+<div class="item" data-value="Gallaudet University">Gallaudet University</div>
+<div class="item" data-value="Gannon University">Gannon University</div>
+<div class="item" data-value="Gardner-Webb University">Gardner-Webb University</div>
+<div class="item" data-value="Geneva College">Geneva College</div>
+<div class="item" data-value="George Fox University">George Fox University</div>
+<div class="item" data-value="George Mason University">George Mason University</div>
+<div class="item" data-value="George Washington University">George Washington University</div>
+<div class="item" data-value="Georgetown College">Georgetown College</div>
+<div class="item" data-value="Georgetown University">Georgetown University</div>
+<div class="item" data-value="Georgian Court College">Georgian Court College</div>
+<div class="item" data-value="Georgia College and State University">Georgia College and State University</div>
+<div class="item" data-value="Georgia Institute of Technology">Georgia Institute of Technology</div>
+<div class="item" data-value="Georgia Perimeter College">Georgia Perimeter College</div>
+<div class="item" data-value="Georgia Southern University">Georgia Southern University</div>
+<div class="item" data-value="Georgia Southwestern State University">Georgia Southwestern State University</div>
+<div class="item" data-value="Georgia State University">Georgia State University</div>
+<div class="item" data-value="Georgian Court College">Georgian Court College</div>
+<div class="item" data-value="Gettysburg College">Gettysburg College</div>
+<div class="item" data-value="Globe University">Globe University</div>
+<div class="item" data-value="Glenville State College">Glenville State College</div>
+<div class="item" data-value="Globe Institute of Technology">Globe Institute of Technology</div>
+<div class="item" data-value="Goddard College">Goddard College</div>
+<div class="item" data-value="Golden Gate University">Golden Gate University</div>
+<div class="item" data-value="Golden State Baptist College">Golden State Baptist College</div>
+<div class="item" data-value="Goldey-Beacom College">Goldey-Beacom College</div>
+<div class="item" data-value="Gonzaga University">Gonzaga University</div>
+<div class="item" data-value="Gooding Institute of Nurse Anesthesia">Gooding Institute of Nurse Anesthesia</div>
+<div class="item" data-value="Gordon College">Gordon College</div>
+<div class="item" data-value="Gordon-Conwell Theological Seminary">Gordon-Conwell Theological Seminary</div>
+<div class="item" data-value="Goshen College">Goshen College</div>
+<div class="item" data-value="Goucher College">Goucher College</div>
+<div class="item" data-value="Governors State University">Governors State University</div>
+<div class="item" data-value="Grace College">Grace College</div>
+<div class="item" data-value="Grace University">Grace University</div>
+<div class="item" data-value="Graceland University">Graceland University</div>
+<div class="item" data-value="The Graduate Center, City University of New York">The Graduate Center, City University of New York</div>
+<div class="item" data-value="Grambling State University">Grambling State University</div>
+<div class="item" data-value="Grand Canyon University">Grand Canyon University</div>
+<div class="item" data-value="Grand Valley State University">Grand Valley State University</div>
+<div class="item" data-value="Grand View College">Grand View College</div>
+<div class="item" data-value="Granite State College">Granite State College</div>
+<div class="item" data-value="Grantham University">Grantham University</div>
+<div class="item" data-value="Great Lakes Maritime Academy">Great Lakes Maritime Academy</div>
+<div class="item" data-value="Green Mountain College">Green Mountain College</div>
+<div class="item" data-value="Greenleaf University">Greenleaf University</div>
+<div class="item" data-value="Greensboro College">Greensboro College</div>
+<div class="item" data-value="Greenville College">Greenville College</div>
+<div class="item" data-value="Greenwich University">Greenwich University</div>
+<div class="item" data-value="Grinnell College">Grinnell College</div>
+<div class="item" data-value="Grove City College">Grove City College</div>
+<div class="item" data-value="Guilford College">Guilford College</div>
+<div class="item" data-value="Gustavus Adolphus College, Saint Peter, Minnesota">Gustavus Adolphus College, Saint Peter, Minnesota</div>
+<div class="item" data-value="Gutenberg College">Gutenberg College</div>
+<div class="item" data-value="Gwynedd-Mercy College">Gwynedd-Mercy College</div>
+<div class="item" data-value="Hamilton College">Hamilton College</div>
+<div class="item" data-value="Hamilton University">Hamilton University</div>
+<div class="item" data-value="Hamline University">Hamline University</div>
+<div class="item" data-value="Hampden-Sydney College">Hampden-Sydney College</div>
+<div class="item" data-value="Hampshire College">Hampshire College</div>
+<div class="item" data-value="Hampton University">Hampton University</div>
+<div class="item" data-value="Hannibal-LaGrange College">Hannibal-LaGrange College</div>
+<div class="item" data-value="Hanover College">Hanover College</div>
+<div class="item" data-value="Hardin-Simmons University">Hardin-Simmons University</div>
+<div class="item" data-value="Harding University">Harding University</div>
+<div class="item" data-value="Harrington College of Design">Harrington College of Design</div>
+<div class="item" data-value="Harris-Stowe State College">Harris-Stowe State College</div>
+<div class="item" data-value="Hartwick College">Hartwick College</div>
+<div class="item" data-value="Harvard University">Harvard University</div>
+<div class="item" data-value="Harvey Mudd College">Harvey Mudd College</div>
+<div class="item" data-value="Haskell Indian Nations University">Haskell Indian Nations University</div>
+<div class="item" data-value="Hastings College">Hastings College</div>
+<div class="item" data-value="Haverford College">Haverford College</div>
+<div class="item" data-value="Hawaii Pacific University">Hawaii Pacific University</div>
+<div class="item" data-value="Hebrew College">Hebrew College</div>
+<div class="item" data-value="Heidelberg College">Heidelberg College</div>
+<div class="item" data-value="Henderson State Univerisity">Henderson State Univerisity</div>
+<div class="item" data-value="Hendrix College">Hendrix College</div>
+<div class="item" data-value="Henry Cogswell College">Henry Cogswell College</div>
+<div class="item" data-value="Heritage University">Heritage University</div>
+<div class="item" data-value="Hesser College">Hesser College</div>
+<div class="item" data-value="Hesston College">Hesston College</div>
+<div class="item" data-value="High Point University">High Point University</div>
+<div class="item" data-value="Hilbert College">Hilbert College</div>
+<div class="item" data-value="Hillsdale College">Hillsdale College</div>
+<div class="item" data-value="Hillsdale Freewill Baptist College">Hillsdale Freewill Baptist College</div>
+<div class="item" data-value="Hiram College">Hiram College</div>
+<div class="item" data-value="Hobart and William Smith Colleges">Hobart and William Smith Colleges</div>
+<div class="item" data-value="Hofstra University">Hofstra University</div>
+<div class="item" data-value="Hollins University">Hollins University</div>
+<div class="item" data-value="Holy Cross College, Notre Dame Indiana">Holy Cross College, Notre Dame Indiana</div>
+<div class="item" data-value="Holy Family College">Holy Family College</div>
+<div class="item" data-value="Holy Names University">Holy Names University</div>
+<div class="item" data-value="Hood College">Hood College</div>
+<div class="item" data-value="Hope College">Hope College</div>
+<div class="item" data-value="Houghton College">Houghton College</div>
+<div class="item" data-value="Houston Baptist University">Houston Baptist University</div>
+<div class="item" data-value="Howard Payne University">Howard Payne University</div>
+<div class="item" data-value="Howard University">Howard University</div>
+<div class="item" data-value="Hult International Business School">Hult International Business School</div>
+<div class="item" data-value="Humboldt State University">Humboldt State University</div>
+<div class="item" data-value="Hunter College">Hunter College</div>
+<div class="item" data-value="Huntingdon College">Huntingdon College</div>
+<div class="item" data-value="Huntington University">Huntington University</div>
+<div class="item" data-value="Huron University">Huron University</div>
+<div class="item" data-value="Husson College">Husson College</div>
+<div class="item" data-value="Huston-Tillotson College">Huston-Tillotson College</div>
+<div class="item" data-value="Idaho State University">Idaho State University</div>
+<div class="item" data-value="Illinois College">Illinois College</div>
+<div class="item" data-value="Illinois Institute of Technology">Illinois Institute of Technology</div>
+<div class="item" data-value="Illinois State University">Illinois State University</div>
+<div class="item" data-value="Illinois Wesleyan University">Illinois Wesleyan University</div>
+<div class="item" data-value="Immaculata College">Immaculata College</div>
+<div class="item" data-value="Indiana Institute of Technology">Indiana Institute of Technology</div>
+<div class="item" data-value="Indiana State University">Indiana State University</div>
+<div class="item" data-value="Indiana Wesleyan University">Indiana Wesleyan University</div>
+<div class="item" data-value="Indiana University">Indiana University</div>
+<div class="item" data-value="Indiana University Northwest">Indiana University Northwest</div>
+<div class="item" data-value="Indiana University of Pennsylvania">Indiana University of Pennsylvania</div>
+<div class="item" data-value="Indiana University at South Bend">Indiana University at South Bend</div>
+<div class="item" data-value="Indiana University Southeast">Indiana University Southeast</div>
+<div class="item" data-value="Indiana University - Purdue University, Columbus">Indiana University - Purdue University, Columbus</div>
+<div class="item" data-value="Indiana University - Purdue University, Fort Wayne">Indiana University - Purdue University, Fort Wayne</div>
+<div class="item" data-value="Indiana University - Purdue University, Indianapolis">Indiana University - Purdue University, Indianapolis</div>
+<div class="item" data-value="Institute for Christian Works">Institute for Christian Works</div>
+<div class="item" data-value="Institute of Computer Technology">Institute of Computer Technology</div>
+<div class="item" data-value="Institute of Paper Science and Technology">Institute of Paper Science and Technology</div>
+<div class="item" data-value="Institute for Transpersonal Psychology">Institute for Transpersonal Psychology</div>
+<div class="item" data-value="Inter American University of Puerto Rico">Inter American University of Puerto Rico</div>
+<div class="item" data-value="International College">International College</div>
+<div class="item" data-value="International Fine Arts College">International Fine Arts College</div>
+<div class="item" data-value="International Institue of the Americas">International Institue of the Americas</div>
+<div class="item" data-value="International Reform University">International Reform University</div>
+<div class="item" data-value="Iona College">Iona College</div>
+<div class="item" data-value="Iowa State University">Iowa State University</div>
+<div class="item" data-value="Iowa Wesleyan College">Iowa Wesleyan College</div>
+<div class="item" data-value="Irvine University College of Law">Irvine University College of Law</div>
+<div class="item" data-value="Ithaca College">Ithaca College</div>
+<div class="item" data-value="Jackson State University">Jackson State University</div>
+<div class="item" data-value="Jacksonville State University">Jacksonville State University</div>
+<div class="item" data-value="Jacksonville University">Jacksonville University</div>
+<div class="item" data-value="James Madison University">James Madison University</div>
+<div class="item" data-value="Jamestown College">Jamestown College</div>
+<div class="item" data-value="Jarvis Christian College">Jarvis Christian College</div>
+<div class="item" data-value="Jewish Theological Seminary">Jewish Theological Seminary</div>
+<div class="item" data-value="John Brown University">John Brown University</div>
+<div class="item" data-value="John Carroll University">John Carroll University</div>
+<div class="item" data-value="John F. Kennedy University">John F. Kennedy University</div>
+<div class="item" data-value="John Jay College of Criminal Justice">John Jay College of Criminal Justice</div>
+<div class="item" data-value="The Johns Hopkins University">The Johns Hopkins University</div>
+<div class="item" data-value="Johnson and Wales University">Johnson and Wales University</div>
+<div class="item" data-value="Johnson Bible College">Johnson Bible College</div>
+<div class="item" data-value="Johnson C. Smith University">Johnson C. Smith University</div>
+<div class="item" data-value="Johnson State College">Johnson State College</div>
+<div class="item" data-value="Joint Military Intelligence College">Joint Military Intelligence College</div>
+<div class="item" data-value="Jones College">Jones College</div>
+<div class="item" data-value="Jones International University">Jones International University</div>
+<div class="item" data-value="Judson College, Marion AL">Judson College, Marion AL</div>
+<div class="item" data-value="Judson College, Elgin IL">Judson College, Elgin IL</div>
+<div class="item" data-value="The Julliard School">The Julliard School</div>
+<div class="item" data-value="Juniata College">Juniata College</div>
+<div class="item" data-value="Kalamazoo College">Kalamazoo College</div>
+<div class="item" data-value="Kansas City Art Institute">Kansas City Art Institute</div>
+<div class="item" data-value="Kansas Newman College">Kansas Newman College</div>
+<div class="item" data-value="Kansas State University">Kansas State University</div>
+<div class="item" data-value="Kansas Wesleyan University">Kansas Wesleyan University</div>
+<div class="item" data-value="Kaplan University">Kaplan University</div>
+<div class="item" data-value="Kean University">Kean University</div>
+<div class="item" data-value="Keck Graduate Institute">Keck Graduate Institute</div>
+<div class="item" data-value="Keene State College">Keene State College</div>
+<div class="item" data-value="Keiser University">Keiser University</div>
+<div class="item" data-value="Kendall College">Kendall College</div>
+<div class="item" data-value="Kennedy-Western University">Kennedy-Western University</div>
+<div class="item" data-value="Kennesaw State University">Kennesaw State University</div>
+<div class="item" data-value="Kent State University">Kent State University</div>
+<div class="item" data-value="Kentucky Christian College">Kentucky Christian College</div>
+<div class="item" data-value="Kentucky State University">Kentucky State University</div>
+<div class="item" data-value="Kentucky Wesleyan College">Kentucky Wesleyan College</div>
+<div class="item" data-value="Kenyon College">Kenyon College</div>
+<div class="item" data-value="Kettering University">Kettering University</div>
+<div class="item" data-value="Keuka College">Keuka College</div>
+<div class="item" data-value="King College">King College</div>
+<div class="item" data-value="King's College, Wilkes-Barre, PA">King's College, Wilkes-Barre, PA</div>
+<div class="item" data-value="The King's College, New York City, NY">The King's College, New York City, NY</div>
+<div class="item" data-value="Knox College">Knox College</div>
+<div class="item" data-value="Knox Theological Seminary">Knox Theological Seminary</div>
+<div class="item" data-value="Knoxville College">Knoxville College</div>
+<div class="item" data-value="Kutztown University of Pennsylvania">Kutztown University of Pennsylvania</div>
+<div class="item" data-value="La Roche College">La Roche College</div>
+<div class="item" data-value="La Salle University">La Salle University</div>
+<div class="item" data-value="La Sierra University">La Sierra University</div>
+<div class="item" data-value="Lafayette College">Lafayette College</div>
+<div class="item" data-value="LaGrange College">LaGrange College</div>
+<div class="item" data-value="Lake Erie College">Lake Erie College</div>
+<div class="item" data-value="Lake Forest College">Lake Forest College</div>
+<div class="item" data-value="Lake Forest Graduate School of Management">Lake Forest Graduate School of Management</div>
+<div class="item" data-value="Lake Superior State University">Lake Superior State University</div>
+<div class="item" data-value="Lakeland College">Lakeland College</div>
+<div class="item" data-value="Lamar University">Lamar University</div>
+<div class="item" data-value="Lambuth University">Lambuth University</div>
+<div class="item" data-value="Lancaster Bible College">Lancaster Bible College</div>
+<div class="item" data-value="Lancaster Theological Seminary">Lancaster Theological Seminary</div>
+<div class="item" data-value="Lander University">Lander University</div>
+<div class="item" data-value="Landmark College">Landmark College</div>
+<div class="item" data-value="Langston University">Langston University</div>
+<div class="item" data-value="Lane College">Lane College</div>
+<div class="item" data-value="Lasell College">Lasell College</div>
+<div class="item" data-value="Lawrence Technological University">Lawrence Technological University</div>
+<div class="item" data-value="Lawrence University">Lawrence University</div>
+<div class="item" data-value="Le Moyne College">Le Moyne College</div>
+<div class="item" data-value="Lebanon Valley College">Lebanon Valley College</div>
+<div class="item" data-value="Lee College">Lee College</div>
+<div class="item" data-value="Lee University">Lee University</div>
+<div class="item" data-value="Lees-McRae College">Lees-McRae College</div>
+<div class="item" data-value="Lehigh Univervsity">Lehigh Univervsity</div>
+<div class="item" data-value="Le Moyne College">Le Moyne College</div>
+<div class="item" data-value="LeMoyne-Owen College">LeMoyne-Owen College</div>
+<div class="item" data-value="Lenoir-Rhyne College">Lenoir-Rhyne College</div>
+<div class="item" data-value="Lenox Institute of Water Technology">Lenox Institute of Water Technology</div>
+<div class="item" data-value="Lesley University">Lesley University</div>
+<div class="item" data-value="LeTourneau University">LeTourneau University</div>
+<div class="item" data-value="Lewis & Clark College">Lewis & Clark College</div>
+<div class="item" data-value="Lewis-Clark State College">Lewis-Clark State College</div>
+<div class="item" data-value="Lewis University">Lewis University</div>
+<div class="item" data-value="Liberty University">Liberty University</div>
+<div class="item" data-value="Life Pacific College">Life Pacific College</div>
+<div class="item" data-value="Life University">Life University</div>
+<div class="item" data-value="Limestone College">Limestone College</div>
+<div class="item" data-value="Lincoln Christian College and Seminary">Lincoln Christian College and Seminary</div>
+<div class="item" data-value="Lincoln College">Lincoln College</div>
+<div class="item" data-value="Lincoln Memorial University">Lincoln Memorial University</div>
+<div class="item" data-value="Lincoln University, Jefferson City Missouri">Lincoln University, Jefferson City Missouri</div>
+<div class="item" data-value="Lincoln University, San Francisco California">Lincoln University, San Francisco California</div>
+<div class="item" data-value="Lincoln University of Pennsylvania">Lincoln University of Pennsylvania</div>
+<div class="item" data-value="Lindenwood College">Lindenwood College</div>
+<div class="item" data-value="Lindsey Wilson College">Lindsey Wilson College</div>
+<div class="item" data-value="Linfield College">Linfield College</div>
+<div class="item" data-value="Lipscomb University">Lipscomb University</div>
+<div class="item" data-value="Lock Haven University">Lock Haven University</div>
+<div class="item" data-value="Logan College of Chiropractic">Logan College of Chiropractic</div>
+<div class="item" data-value="Loma Linda University">Loma Linda University</div>
+<div class="item" data-value="Long Island University">Long Island University</div>
+<div class="item" data-value="Longwood College">Longwood College</div>
+<div class="item" data-value="Loras College">Loras College</div>
+<div class="item" data-value="Louisburg College">Louisburg College</div>
+<div class="item" data-value="Louisiana Baptist Universty">Louisiana Baptist Universty</div>
+<div class="item" data-value="Louisiana College">Louisiana College</div>
+<div class="item" data-value="Louisiana State University at Alexandria">Louisiana State University at Alexandria</div>
+<div class="item" data-value="Louisiana State University at Baton Rouge">Louisiana State University at Baton Rouge</div>
+<div class="item" data-value="Louisiana State University Health Sciences Center New Orleans">Louisiana State University Health Sciences Center New Orleans</div>
+<div class="item" data-value="Louisiana State University at Shreveport">Louisiana State University at Shreveport</div>
+<div class="item" data-value="Louisiana Tech University">Louisiana Tech University</div>
+<div class="item" data-value="Lourdes College">Lourdes College</div>
+<div class="item" data-value="Loyola College, Baltimore">Loyola College, Baltimore</div>
+<div class="item" data-value="Loyola Marymount University">Loyola Marymount University</div>
+<div class="item" data-value="Loyola University, Chicago">Loyola University, Chicago</div>
+<div class="item" data-value="Loyola University, New Orleans">Loyola University, New Orleans</div>
+<div class="item" data-value="Lubbock Christian University">Lubbock Christian University</div>
+<div class="item" data-value="Luther College">Luther College</div>
+<div class="item" data-value="Luther Seminary">Luther Seminary</div>
+<div class="item" data-value="Lutheran Bible Institute">Lutheran Bible Institute</div>
+<div class="item" data-value="Lutheran Theological Seminary at Gettysburg">Lutheran Theological Seminary at Gettysburg</div>
+<div class="item" data-value="Lycoming College">Lycoming College</div>
+<div class="item" data-value="Lyme Academy of Fine Arts">Lyme Academy of Fine Arts</div>
+<div class="item" data-value="Lynchburg College">Lynchburg College</div>
+<div class="item" data-value="Lyndon State College">Lyndon State College</div>
+<div class="item" data-value="Lynn University">Lynn University</div>
+<div class="item" data-value="Lyon College">Lyon College</div>
+<div class="item" data-value="Macalester College">Macalester College</div>
+<div class="item" data-value="MacMurray College">MacMurray College</div>
+<div class="item" data-value="Madonna University">Madonna University</div>
+<div class="item" data-value="Magdalen College">Magdalen College</div>
+<div class="item" data-value="Maharishi University of Management">Maharishi University of Management</div>
+<div class="item" data-value="Maine College of Art">Maine College of Art</div>
+<div class="item" data-value="Maine Maritime Academy">Maine Maritime Academy</div>
+<div class="item" data-value="Malone College">Malone College</div>
+<div class="item" data-value="Manchester College">Manchester College</div>
+<div class="item" data-value="Manhattan College">Manhattan College</div>
+<div class="item" data-value="Manhattanville College">Manhattanville College</div>
+<div class="item" data-value="Mansfield University">Mansfield University</div>
+<div class="item" data-value="Maranatha Baptist Bible College">Maranatha Baptist Bible College</div>
+<div class="item" data-value="Marian College">Marian College</div>
+<div class="item" data-value="Marietta College">Marietta College</div>
+<div class="item" data-value="Marlboro College">Marlboro College</div>
+<div class="item" data-value="Marlboro College Graduate Center">Marlboro College Graduate Center</div>
+<div class="item" data-value="Marist College">Marist College</div>
+<div class="item" data-value="Marquette University">Marquette University</div>
+<div class="item" data-value="Mars Hill College">Mars Hill College</div>
+<div class="item" data-value="Marshall University">Marshall University</div>
+<div class="item" data-value="Mary Baldwin College">Mary Baldwin College</div>
+<div class="item" data-value="Marygrove College">Marygrove College</div>
+<div class="item" data-value="Maryland Institute, College of Art">Maryland Institute, College of Art</div>
+<div class="item" data-value="Marylhurst University">Marylhurst University</div>
+<div class="item" data-value="Marymount College">Marymount College</div>
+<div class="item" data-value="Marymount Manhattan College">Marymount Manhattan College</div>
+<div class="item" data-value="Marymount University">Marymount University</div>
+<div class="item" data-value="Maryville College">Maryville College</div>
+<div class="item" data-value="Maryville University of Saint Louis">Maryville University of Saint Louis</div>
+<div class="item" data-value="Marywood University">Marywood University</div>
+<div class="item" data-value="Massachusetts College of Art">Massachusetts College of Art</div>
+<div class="item" data-value="Massachusetts College of Liberal Arts">Massachusetts College of Liberal Arts</div>
+<div class="item" data-value="Massachusetts College of Pharmacy and Health Sciences">Massachusetts College of Pharmacy and Health Sciences</div>
+<div class="item" data-value="Massachusetts Institute of Technology">Massachusetts Institute of Technology</div>
+<div class="item" data-value="Massachusetts Maritime Academy">Massachusetts Maritime Academy</div>
+<div class="item" data-value="Massachusetts School of Professional Psychology">Massachusetts School of Professional Psychology</div>
+<div class="item" data-value="The Master's College">The Master's College</div>
+<div class="item" data-value="The Mayo Foundation">The Mayo Foundation</div>
+<div class="item" data-value="Mayville State University">Mayville State University</div>
+<div class="item" data-value="McDaniel College">McDaniel College</div>
+<div class="item" data-value="The McGregor School of Antioch University">The McGregor School of Antioch University</div>
+<div class="item" data-value="McKendree College">McKendree College</div>
+<div class="item" data-value="McMurry University">McMurry University</div>
+<div class="item" data-value="McNeese State University">McNeese State University</div>
+<div class="item" data-value="MCP Hahnemann University">MCP Hahnemann University</div>
+<div class="item" data-value="McPherson College">McPherson College</div>
+<div class="item" data-value="Medaille College">Medaille College</div>
+<div class="item" data-value="Medical College of Georgia">Medical College of Georgia</div>
+<div class="item" data-value="Medical College of Ohio">Medical College of Ohio</div>
+<div class="item" data-value="Medical College of Pennsylvania and Hahnemann University">Medical College of Pennsylvania and Hahnemann University</div>
+<div class="item" data-value="Medical College of Wisconsin">Medical College of Wisconsin</div>
+<div class="item" data-value="Medical University of South Carolina">Medical University of South Carolina</div>
+<div class="item" data-value="Meharry Medical College">Meharry Medical College</div>
+<div class="item" data-value="Menlo College">Menlo College</div>
+<div class="item" data-value="Mercer University">Mercer University</div>
+<div class="item" data-value="Mercy College">Mercy College</div>
+<div class="item" data-value="Mercy College of Health Sciences">Mercy College of Health Sciences</div>
+<div class="item" data-value="Mercyhurst College">Mercyhurst College</div>
+<div class="item" data-value="Meredith College">Meredith College</div>
+<div class="item" data-value="Merrimack College">Merrimack College</div>
+<div class="item" data-value="Mesa State College">Mesa State College</div>
+<div class="item" data-value="Messiah College">Messiah College</div>
+<div class="item" data-value="Methodist College">Methodist College</div>
+<div class="item" data-value="Methodist Theological School in Ohio">Methodist Theological School in Ohio</div>
+<div class="item" data-value="Metropolitan College">Metropolitan College</div>
+<div class="item" data-value="Metropolitan College of New York">Metropolitan College of New York</div>
+<div class="item" data-value="Metropolitan State College of Denver">Metropolitan State College of Denver</div>
+<div class="item" data-value="Metropolitan State University">Metropolitan State University</div>
+<div class="item" data-value="Miami Christian University">Miami Christian University</div>
+<div class="item" data-value="Miami University of Ohio">Miami University of Ohio</div>
+<div class="item" data-value="Michigan Jewish Institute">Michigan Jewish Institute</div>
+<div class="item" data-value="Michigan State University">Michigan State University</div>
+<div class="item" data-value="Michigan Technological University">Michigan Technological University</div>
+<div class="item" data-value="Mid-America Nazarene University">Mid-America Nazarene University</div>
+<div class="item" data-value="Middle Georgia College">Middle Georgia College</div>
+<div class="item" data-value="Middle Tennessee State University">Middle Tennessee State University</div>
+<div class="item" data-value="Middlebury College">Middlebury College</div>
+<div class="item" data-value="Midwestern Baptist College">Midwestern Baptist College</div>
+<div class="item" data-value="Midwestern State University">Midwestern State University</div>
+<div class="item" data-value="Miles College">Miles College</div>
+<div class="item" data-value="Millersville University">Millersville University</div>
+<div class="item" data-value="Milligan College">Milligan College</div>
+<div class="item" data-value="Millikin University">Millikin University</div>
+<div class="item" data-value="Mills College">Mills College</div>
+<div class="item" data-value="Millsaps College">Millsaps College</div>
+<div class="item" data-value="Milwaukee School of Engineering">Milwaukee School of Engineering</div>
+<div class="item" data-value="Minneapolis College of Art and Design">Minneapolis College of Art and Design</div>
+<div class="item" data-value="Minnesota State University Mankato">Minnesota State University Mankato</div>
+<div class="item" data-value="Minnesota State University Moorhead">Minnesota State University Moorhead</div>
+<div class="item" data-value="Minot State University">Minot State University</div>
+<div class="item" data-value="Minot State University--Bottineau">Minot State University--Bottineau</div>
+<div class="item" data-value="Mississippi College">Mississippi College</div>
+<div class="item" data-value="Mississippi State University">Mississippi State University</div>
+<div class="item" data-value="Mississippi University for Women">Mississippi University for Women</div>
+<div class="item" data-value="Mississippi Valley State University">Mississippi Valley State University</div>
+<div class="item" data-value="Missouri Baptist College">Missouri Baptist College</div>
+<div class="item" data-value="Missouri Southern State College">Missouri Southern State College</div>
+<div class="item" data-value="Missouri State University">Missouri State University</div>
+<div class="item" data-value="Missouri Tech">Missouri Tech</div>
+<div class="item" data-value="Missouri University of Science and Technology">Missouri University of Science and Technology</div>
+<div class="item" data-value="Missouri Valley College">Missouri Valley College</div>
+<div class="item" data-value="Missouri Western State College">Missouri Western State College</div>
+<div class="item" data-value="Mitchell College">Mitchell College</div>
+<div class="item" data-value="Molloy College">Molloy College</div>
+<div class="item" data-value="Monmouth College, Monmouth Illinois">Monmouth College, Monmouth Illinois</div>
+<div class="item" data-value="Monmouth University, West Long Branch New Jersey">Monmouth University, West Long Branch New Jersey</div>
+<div class="item" data-value="Monroe College">Monroe College</div>
+<div class="item" data-value="Montana State University-Billings">Montana State University-Billings</div>
+<div class="item" data-value="Montana State University-Bozeman">Montana State University-Bozeman</div>
+<div class="item" data-value="Montana State University College of Technology, Great Falls">Montana State University College of Technology, Great Falls</div>
+<div class="item" data-value="Montana State University-Northern Havre">Montana State University-Northern Havre</div>
+<div class="item" data-value="Montana Tech">Montana Tech</div>
+<div class="item" data-value="Montclair State University">Montclair State University</div>
+<div class="item" data-value="Monterey College of Law">Monterey College of Law</div>
+<div class="item" data-value="Monterey Institute of International Studies">Monterey Institute of International Studies</div>
+<div class="item" data-value="Montreat College">Montreat College</div>
+<div class="item" data-value="Moravian College">Moravian College</div>
+<div class="item" data-value="Morehead State University">Morehead State University</div>
+<div class="item" data-value="Morehouse College">Morehouse College</div>
+<div class="item" data-value="Morehouse School of Medicine">Morehouse School of Medicine</div>
+<div class="item" data-value="Morgan State University">Morgan State University</div>
+<div class="item" data-value="Morningside College">Morningside College</div>
+<div class="item" data-value="Morris Brown College">Morris Brown College</div>
+<div class="item" data-value="Morris College">Morris College</div>
+<div class="item" data-value="Mount Aloysius College">Mount Aloysius College</div>
+<div class="item" data-value="Mount Holyoke College">Mount Holyoke College</div>
+<div class="item" data-value="Mount Ida College">Mount Ida College</div>
+<div class="item" data-value="Mount Marty College">Mount Marty College</div>
+<div class="item" data-value="Mount Mary College">Mount Mary College</div>
+<div class="item" data-value="Mount Mercy College">Mount Mercy College</div>
+<div class="item" data-value="Mount Olive College">Mount Olive College</div>
+<div class="item" data-value="Mount Saint Mary College">Mount Saint Mary College</div>
+<div class="item" data-value="Mount St. Mary's College and Seminary, Emmitsburg Maryland">Mount St. Mary's College and Seminary, Emmitsburg Maryland</div>
+<div class="item" data-value="Mount St. Mary's College, Los Angeles California">Mount St. Mary's College, Los Angeles California</div>
+<div class="item" data-value="Mount Senario College">Mount Senario College</div>
+<div class="item" data-value="Mt. Sierra College">Mt. Sierra College</div>
+<div class="item" data-value="Mount Union College">Mount Union College</div>
+<div class="item" data-value="Mount Vernon Nazarene College">Mount Vernon Nazarene College</div>
+<div class="item" data-value="Mountain State University">Mountain State University</div>
+<div class="item" data-value="Muhlenberg College">Muhlenberg College</div>
+<div class="item" data-value="Murray State University">Murray State University</div>
+<div class="item" data-value="Muskingum College">Muskingum College</div>
+<div class="item" data-value="Naropa University">Naropa University</div>
+<div class="item" data-value="National American University">National American University</div>
+<div class="item" data-value="National Defense University">National Defense University</div>
+<div class="item" data-value="The National Graduate School">The National Graduate School</div>
+<div class="item" data-value="National-Louis University">National-Louis University</div>
+<div class="item" data-value="National Technological University">National Technological University</div>
+<div class="item" data-value="National University">National University</div>
+<div class="item" data-value="National University of Health Sciences">National University of Health Sciences</div>
+<div class="item" data-value="The Naval Postgraduate School">The Naval Postgraduate School</div>
+<div class="item" data-value="Nazarene Bible College">Nazarene Bible College</div>
+<div class="item" data-value="Nazareth College">Nazareth College</div>
+<div class="item" data-value="Nebraska Methodist College">Nebraska Methodist College</div>
+<div class="item" data-value="Nebraska Wesleyan University">Nebraska Wesleyan University</div>
+<div class="item" data-value="Neumann College">Neumann College</div>
+<div class="item" data-value="Nevada State College">Nevada State College</div>
+<div class="item" data-value="New Brunswick Theological Seminary">New Brunswick Theological Seminary</div>
+<div class="item" data-value="New College of Florida">New College of Florida</div>
+<div class="item" data-value="New England College">New England College</div>
+<div class="item" data-value="New England College of Optometry">New England College of Optometry</div>
+<div class="item" data-value="New England Conservatory of Music">New England Conservatory of Music</div>
+<div class="item" data-value="New England Institute of Technology">New England Institute of Technology</div>
+<div class="item" data-value="New England Law">New England Law</div>
+<div class="item" data-value="New England School of Communications">New England School of Communications</div>
+<div class="item" data-value="New Jersey City University">New Jersey City University</div>
+<div class="item" data-value="New Jersey Institute of Technology">New Jersey Institute of Technology</div>
+<div class="item" data-value="New Mexico Highlands University">New Mexico Highlands University</div>
+<div class="item" data-value="New Mexico Institute of Mining and Technology">New Mexico Institute of Mining and Technology</div>
+<div class="item" data-value="New Mexico State University">New Mexico State University</div>
+<div class="item" data-value="New Saint Andrews College">New Saint Andrews College</div>
+<div class="item" data-value="New School of Architecture and Design">New School of Architecture and Design</div>
+<div class="item" data-value="New School University">New School University</div>
+<div class="item" data-value="New World School of the Arts">New World School of the Arts</div>
+<div class="item" data-value="New York Academy of Art">New York Academy of Art</div>
+<div class="item" data-value="New York Institute of Technology">New York Institute of Technology</div>
+<div class="item" data-value="New York Film Academy">New York Film Academy</div>
+<div class="item" data-value="New York Law School">New York Law School</div>
+<div class="item" data-value="New York University">New York University</div>
+<div class="item" data-value="Newberry College">Newberry College</div>
+<div class="item" data-value="Newport University">Newport University</div>
+<div class="item" data-value="Niagara University">Niagara University</div>
+<div class="item" data-value="Nicholls State University">Nicholls State University</div>
+<div class="item" data-value="Nichols College">Nichols College</div>
+<div class="item" data-value="Norfolk State University">Norfolk State University</div>
+<div class="item" data-value="North Carolina Agricultural and Technical State University">North Carolina Agricultural and Technical State University</div>
+<div class="item" data-value="North Carolina Central University">North Carolina Central University</div>
+<div class="item" data-value="North Carolina School of the Arts">North Carolina School of the Arts</div>
+<div class="item" data-value="North Carolina State University">North Carolina State University</div>
+<div class="item" data-value="North Carolina Wesleyan College">North Carolina Wesleyan College</div>
+<div class="item" data-value="North Central College">North Central College</div>
+<div class="item" data-value="North Central University">North Central University</div>
+<div class="item" data-value="North Dakota State University--Fargo">North Dakota State University--Fargo</div>
+<div class="item" data-value="North Georgia College and State University, the Military College of Georgia">North Georgia College and State University, the Military College of Georgia</div>
+<div class="item" data-value="North Greenville University">North Greenville University</div>
+<div class="item" data-value="North Park University">North Park University</div>
+<div class="item" data-value="Northcentral University">Northcentral University</div>
+<div class="item" data-value="Northeastern Illinois University">Northeastern Illinois University</div>
+<div class="item" data-value="Northeastern University">Northeastern University</div>
+<div class="item" data-value="Northeastern State University">Northeastern State University</div>
+<div class="item" data-value="Northern Arizona University">Northern Arizona University</div>
+<div class="item" data-value="Northern Illinois University">Northern Illinois University</div>
+<div class="item" data-value="Northern Kentucky University">Northern Kentucky University</div>
+<div class="item" data-value="Northern Michigan University">Northern Michigan University</div>
+<div class="item" data-value="Northern State University">Northern State University</div>
+<div class="item" data-value="Northland College">Northland College</div>
+<div class="item" data-value="Northwest Christian College">Northwest Christian College</div>
+<div class="item" data-value="Northwest College of Art">Northwest College of Art</div>
+<div class="item" data-value="Northwest Missouri State University">Northwest Missouri State University</div>
+<div class="item" data-value="Northwest Nazarene University">Northwest Nazarene University</div>
+<div class="item" data-value="Northwest University">Northwest University</div>
+<div class="item" data-value="Northwestern Oklahoma State University">Northwestern Oklahoma State University</div>
+<div class="item" data-value="Northwestern State University, Louisiana">Northwestern State University, Louisiana</div>
+<div class="item" data-value="Northwestern College, Iowa">Northwestern College, Iowa</div>
+<div class="item" data-value="Northwestern College, Saint Paul, MN">Northwestern College, Saint Paul, MN</div>
+<div class="item" data-value="Northwestern Michigan College">Northwestern Michigan College</div>
+<div class="item" data-value="Northwestern University">Northwestern University</div>
+<div class="item" data-value="Northwood University">Northwood University</div>
+<div class="item" data-value="Norwich University">Norwich University</div>
+<div class="item" data-value="Notre Dame College of Ohio">Notre Dame College of Ohio</div>
+<div class="item" data-value="Notre Dame de Namur University">Notre Dame de Namur University</div>
+<div class="item" data-value="Nova Southeastern University">Nova Southeastern University</div>
+<div class="item" data-value="Nyack College">Nyack College</div>
+<div class="item" data-value="Oakland University">Oakland University</div>
+<div class="item" data-value="Oakwood College">Oakwood College</div>
+<div class="item" data-value="Oberlin College">Oberlin College</div>
+<div class="item" data-value="Occidental College">Occidental College</div>
+<div class="item" data-value="Oglethorpe University">Oglethorpe University</div>
+<div class="item" data-value="Ohio Dominican University">Ohio Dominican University</div>
+<div class="item" data-value="Ohio Northern University">Ohio Northern University</div>
+<div class="item" data-value="The Ohio State University">The Ohio State University</div>
+<div class="item" data-value="Ohio University">Ohio University</div>
+<div class="item" data-value="Ohio Valley College">Ohio Valley College</div>
+<div class="item" data-value="Ohio Wesleyan University">Ohio Wesleyan University</div>
+<div class="item" data-value="Oklahoma Baptist University">Oklahoma Baptist University</div>
+<div class="item" data-value="Oklahoma Christian University">Oklahoma Christian University</div>
+<div class="item" data-value="Oklahoma City University">Oklahoma City University</div>
+<div class="item" data-value="Oklahoma Panhandle State University">Oklahoma Panhandle State University</div>
+<div class="item" data-value="Oklahoma State University">Oklahoma State University</div>
+<div class="item" data-value="Oklahoma State University Tulsa">Oklahoma State University Tulsa</div>
+<div class="item" data-value="Oklahoma Wesleyan University">Oklahoma Wesleyan University</div>
+<div class="item" data-value="Old Dominion University">Old Dominion University</div>
+<div class="item" data-value="Olin College of Engineering">Olin College of Engineering</div>
+<div class="item" data-value="Olivet College">Olivet College</div>
+<div class="item" data-value="Olivet Nazarene University">Olivet Nazarene University</div>
+<div class="item" data-value="The Open University">The Open University</div>
+<div class="item" data-value="Oral Roberts University">Oral Roberts University</div>
+<div class="item" data-value="Oregon Graduate Institute of Science and Technology">Oregon Graduate Institute of Science and Technology</div>
+<div class="item" data-value="Oregon Health Sciences University">Oregon Health Sciences University</div>
+<div class="item" data-value="Oregon Institute of Technology">Oregon Institute of Technology</div>
+<div class="item" data-value="Oregon State University">Oregon State University</div>
+<div class="item" data-value="Otterbein College">Otterbein College</div>
+<div class="item" data-value="Ottawa University">Ottawa University</div>
+<div class="item" data-value="Ouachita Baptist University">Ouachita Baptist University</div>
+<div class="item" data-value="Our Lady of the Lake University">Our Lady of the Lake University</div>
+<div class="item" data-value="Our Lady of Holy Cross College">Our Lady of Holy Cross College</div>
+<div class="item" data-value="Pace University">Pace University</div>
+<div class="item" data-value="Pacific College of Oriental Medicine">Pacific College of Oriental Medicine</div>
+<div class="item" data-value="Pacific Lutheran University">Pacific Lutheran University</div>
+<div class="item" data-value="Pacific Northwest College of Art">Pacific Northwest College of Art</div>
+<div class="item" data-value="Pacific Oaks College">Pacific Oaks College</div>
+<div class="item" data-value="Pacific States University">Pacific States University</div>
+<div class="item" data-value="Pacific Union College">Pacific Union College</div>
+<div class="item" data-value="Pacific University">Pacific University</div>
+<div class="item" data-value="Paine College">Paine College</div>
+<div class="item" data-value="Palm Beach Atlantic College">Palm Beach Atlantic College</div>
+<div class="item" data-value="Palmer College of Chiropractic">Palmer College of Chiropractic</div>
+<div class="item" data-value="Park College">Park College</div>
+<div class="item" data-value="Parsons School of Design">Parsons School of Design</div>
+<div class="item" data-value="Patten College">Patten College</div>
+<div class="item" data-value="Patrick Henry College">Patrick Henry College</div>
+<div class="item" data-value="Paul Quinn College">Paul Quinn College</div>
+<div class="item" data-value="Paul Smith's College">Paul Smith's College</div>
+<div class="item" data-value="Peace College">Peace College</div>
+<div class="item" data-value="Pennsylvania College of Technology">Pennsylvania College of Technology</div>
+<div class="item" data-value="The Pennsylvania State University">The Pennsylvania State University</div>
+<div class="item" data-value="Pennsylvania State University at Altoona">Pennsylvania State University at Altoona</div>
+<div class="item" data-value="Pennsylvania State University, Great Valley">Pennsylvania State University, Great Valley</div>
+<div class="item" data-value="Pennsylvania State University at Harrisburg">Pennsylvania State University at Harrisburg</div>
+<div class="item" data-value="Pennsylvania State University, Worthington Scranton">Pennsylvania State University, Worthington Scranton</div>
+<div class="item" data-value="Pensacola Christian College">Pensacola Christian College</div>
+<div class="item" data-value="Pepperdine University">Pepperdine University</div>
+<div class="item" data-value="Peru State College">Peru State College</div>
+<div class="item" data-value="Pfeiffer University">Pfeiffer University</div>
+<div class="item" data-value="Pickering University">Pickering University</div>
+<div class="item" data-value="Piedmont College">Piedmont College</div>
+<div class="item" data-value="Pikeville College">Pikeville College</div>
+<div class="item" data-value="Pine Manor College">Pine Manor College</div>
+<div class="item" data-value="Pittsburg State University">Pittsburg State University</div>
+<div class="item" data-value="Pitzer College">Pitzer College</div>
+<div class="item" data-value="Philadelphia Biblical University">Philadelphia Biblical University</div>
+<div class="item" data-value="Philadelphia University">Philadelphia University</div>
+<div class="item" data-value="Philander Smith College">Philander Smith College</div>
+<div class="item" data-value="Phillips University">Phillips University</div>
+<div class="item" data-value="Plymouth State University, Plymouth New Hampshire">Plymouth State University, Plymouth New Hampshire</div>
+<div class="item" data-value="Point Loma Nazarene College">Point Loma Nazarene College</div>
+<div class="item" data-value="Point Park University">Point Park University</div>
+<div class="item" data-value="Polytechnic University of New York">Polytechnic University of New York</div>
+<div class="item" data-value="Polytechnic University of Puerto Rico">Polytechnic University of Puerto Rico</div>
+<div class="item" data-value="Pomona College">Pomona College</div>
+<div class="item" data-value="Pontifical University">Pontifical University</div>
+<div class="item" data-value="Portland State University">Portland State University</div>
+<div class="item" data-value="Potomac College">Potomac College</div>
+<div class="item" data-value="Prairie View A & M University">Prairie View A & M University</div>
+<div class="item" data-value="Pratt Institute">Pratt Institute</div>
+<div class="item" data-value="Presbyterian College">Presbyterian College</div>
+<div class="item" data-value="Prescott College">Prescott College</div>
+<div class="item" data-value="Preston University">Preston University</div>
+<div class="item" data-value="Princeton University">Princeton University</div>
+<div class="item" data-value="Principia College">Principia College</div>
+<div class="item" data-value="Providence College">Providence College</div>
+<div class="item" data-value="Purdue University">Purdue University</div>
+<div class="item" data-value="Purdue University North Central">Purdue University North Central</div>
+<div class="item" data-value="Queens College">Queens College</div>
+<div class="item" data-value="Quincy University">Quincy University</div>
+<div class="item" data-value="Quinnipiac College">Quinnipiac College</div>
+<div class="item" data-value="Radford University">Radford University</div>
+<div class="item" data-value="Ramapo College of New Jersey">Ramapo College of New Jersey</div>
+<div class="item" data-value="Randolph College">Randolph College</div>
+<div class="item" data-value="Randolph-Macon College">Randolph-Macon College</div>
+<div class="item" data-value="Rasmussen College">Rasmussen College</div>
+<div class="item" data-value="Reed College">Reed College</div>
+<div class="item" data-value="Regent University">Regent University</div>
+<div class="item" data-value="Regis College">Regis College</div>
+<div class="item" data-value="Regis University">Regis University</div>
+<div class="item" data-value="Reinhardt College">Reinhardt College</div>
+<div class="item" data-value="Remington College">Remington College</div>
+<div class="item" data-value="Rensselaer Polytechnic Institute">Rensselaer Polytechnic Institute</div>
+<div class="item" data-value="Rhode Island College">Rhode Island College</div>
+<div class="item" data-value="Rhode Island School of Design">Rhode Island School of Design</div>
+<div class="item" data-value="Rhodes College">Rhodes College</div>
+<div class="item" data-value="Rice University">Rice University</div>
+<div class="item" data-value="The Richard Stockton College of New Jersey">The Richard Stockton College of New Jersey</div>
+<div class="item" data-value="Rider University">Rider University</div>
+<div class="item" data-value="Ringling School of Art and Design">Ringling School of Art and Design</div>
+<div class="item" data-value="Ripon College">Ripon College</div>
+<div class="item" data-value="Rivier College">Rivier College</div>
+<div class="item" data-value="Roanoke College">Roanoke College</div>
+<div class="item" data-value="Robert Morris College, Illinois">Robert Morris College, Illinois</div>
+<div class="item" data-value="Robert Morris College, Pittsburgh, PA">Robert Morris College, Pittsburgh, PA</div>
+<div class="item" data-value="Roberts Wesleyan College">Roberts Wesleyan College</div>
+<div class="item" data-value="Rochester Institute of Technology">Rochester Institute of Technology</div>
+<div class="item" data-value="Rochester College">Rochester College</div>
+<div class="item" data-value="The Rockefeller University">The Rockefeller University</div>
+<div class="item" data-value="Rockford College">Rockford College</div>
+<div class="item" data-value="Rockhurst University">Rockhurst University</div>
+<div class="item" data-value="Rocky Mountain College">Rocky Mountain College</div>
+<div class="item" data-value="Roger Williams University">Roger Williams University</div>
+<div class="item" data-value="Rogers State University">Rogers State University</div>
+<div class="item" data-value="Rollins College">Rollins College</div>
+<div class="item" data-value="Roosevelt University">Roosevelt University</div>
+<div class="item" data-value="Rose-Hulman Institute of Technology">Rose-Hulman Institute of Technology</div>
+<div class="item" data-value="Rosemont College">Rosemont College</div>
+<div class="item" data-value="Rowan University">Rowan University</div>
+<div class="item" data-value="Rush University">Rush University</div>
+<div class="item" data-value="Russell Sage College">Russell Sage College</div>
+<div class="item" data-value="Rust College">Rust College</div>
+<div class="item" data-value="Rutgers University">Rutgers University</div>
+<div class="item" data-value="Rutgers University-Camden">Rutgers University-Camden</div>
+<div class="item" data-value="Rutgers University-Newark">Rutgers University-Newark</div>
+<div class="item" data-value="Ryokan College">Ryokan College</div>
+<div class="item" data-value="Sacred Heart University">Sacred Heart University</div>
+<div class="item" data-value="Sacred Heart University, Puerto Rico">Sacred Heart University, Puerto Rico</div>
+<div class="item" data-value="The Sage Colleges">The Sage Colleges</div>
+<div class="item" data-value="Saginaw Valley State University">Saginaw Valley State University</div>
+<div class="item" data-value="Saint Ambrose University">Saint Ambrose University</div>
+<div class="item" data-value="Saint Andrews Presbyterian College">Saint Andrews Presbyterian College</div>
+<div class="item" data-value="Saint Anselm College">Saint Anselm College</div>
+<div class="item" data-value="Saint Anthony College of Nursing">Saint Anthony College of Nursing</div>
+<div class="item" data-value="Saint Augustine's College">Saint Augustine's College</div>
+<div class="item" data-value="Saint Bonaventure University">Saint Bonaventure University</div>
+<div class="item" data-value="Saint Cloud State University">Saint Cloud State University</div>
+<div class="item" data-value="Saint Edwards University">Saint Edwards University</div>
+<div class="item" data-value="Saint Francis College, Brooklyn Heights, New York">Saint Francis College, Brooklyn Heights, New York</div>
+<div class="item" data-value="Saint Francis College, Fort Wayne, Indiana">Saint Francis College, Fort Wayne, Indiana</div>
+<div class="item" data-value="Saint Francis College, Loretto, Pennsylvania">Saint Francis College, Loretto, Pennsylvania</div>
+<div class="item" data-value="Saint Gregory's University">Saint Gregory's University</div>
+<div class="item" data-value="Saint John Fisher College">Saint John Fisher College</div>
+<div class="item" data-value="Saint John's College">Saint John's College</div>
+<div class="item" data-value="Saint John's University, Collegeville Minnesota">Saint John's University, Collegeville Minnesota</div>
+<div class="item" data-value="Saint John's University, Jamaica New York">Saint John's University, Jamaica New York</div>
+<div class="item" data-value="Saint Joseph College">Saint Joseph College</div>
+<div class="item" data-value="Saint Joseph's College">Saint Joseph's College</div>
+<div class="item" data-value="Saint Joseph's College of Maine">Saint Joseph's College of Maine</div>
+<div class="item" data-value="Saint Joseph's University">Saint Joseph's University</div>
+<div class="item" data-value="Saint Lawrence University">Saint Lawrence University</div>
+<div class="item" data-value="Saint Leo University">Saint Leo University</div>
+<div class="item" data-value="Saint Louis University">Saint Louis University</div>
+<div class="item" data-value="Saint Louis Christian College">Saint Louis Christian College</div>
+<div class="item" data-value="Saint Martin's University">Saint Martin's University</div>
+<div class="item" data-value="Saint Mary-of-the-Woods College">Saint Mary-of-the-Woods College</div>
+<div class="item" data-value="Saint Mary's College of California">Saint Mary's College of California</div>
+<div class="item" data-value="Saint Mary's College of Maryland">Saint Mary's College of Maryland</div>
+<div class="item" data-value="Saint Mary's University of Minnesota">Saint Mary's University of Minnesota</div>
+<div class="item" data-value="Saint Mary's University of San Antonio">Saint Mary's University of San Antonio</div>
+<div class="item" data-value="Saint Meinrad's School of Theology">Saint Meinrad's School of Theology</div>
+<div class="item" data-value="Saint Michael's College">Saint Michael's College</div>
+<div class="item" data-value="Saint Norbert College">Saint Norbert College</div>
+<div class="item" data-value="Saint Olaf College">Saint Olaf College</div>
+<div class="item" data-value="Saint Paul's College">Saint Paul's College</div>
+<div class="item" data-value="Saint Peter's College">Saint Peter's College</div>
+<div class="item" data-value="Saint Petersburg College">Saint Petersburg College</div>
+<div class="item" data-value="Saint Rose College">Saint Rose College</div>
+<div class="item" data-value="Saint Thomas Aquinas College">Saint Thomas Aquinas College</div>
+<div class="item" data-value="Saint Thomas University">Saint Thomas University</div>
+<div class="item" data-value="Saint Vincent College">Saint Vincent College</div>
+<div class="item" data-value="Saint Xavier University">Saint Xavier University</div>
+<div class="item" data-value="Salem College">Salem College</div>
+<div class="item" data-value="Salem International University">Salem International University</div>
+<div class="item" data-value="Salem State College">Salem State College</div>
+<div class="item" data-value="Salisbury State University">Salisbury State University</div>
+<div class="item" data-value="The Salk Institute for Biological Studies">The Salk Institute for Biological Studies</div>
+<div class="item" data-value="Salve Regina University">Salve Regina University</div>
+<div class="item" data-value="Sam Houston State University">Sam Houston State University</div>
+<div class="item" data-value="Samford University">Samford University</div>
+<div class="item" data-value="Samuel Merritt College">Samuel Merritt College</div>
+<div class="item" data-value="San Diego State University">San Diego State University</div>
+<div class="item" data-value="San Francisco Art Institute">San Francisco Art Institute</div>
+<div class="item" data-value="San Francisco Law School">San Francisco Law School</div>
+<div class="item" data-value="San Francisco State University">San Francisco State University</div>
+<div class="item" data-value="San Joaquin College of Law">San Joaquin College of Law</div>
+<div class="item" data-value="San Jose Christian College">San Jose Christian College</div>
+<div class="item" data-value="San Jose State University">San Jose State University</div>
+<div class="item" data-value="Santa Clara University">Santa Clara University</div>
+<div class="item" data-value="Sarah Lawrence College">Sarah Lawrence College</div>
+<div class="item" data-value="Saratoga University School of Law">Saratoga University School of Law</div>
+<div class="item" data-value="Sarah Lawrence College">Sarah Lawrence College</div>
+<div class="item" data-value="Savannah College of Art and Design">Savannah College of Art and Design</div>
+<div class="item" data-value="Savannah State University">Savannah State University</div>
+<div class="item" data-value="Saybrook Graduate School and Research Center">Saybrook Graduate School and Research Center</div>
+<div class="item" data-value="Schiller International University">Schiller International University</div>
+<div class="item" data-value="School for International Training">School for International Training</div>
+<div class="item" data-value="School of the Art Institute of Chicago">School of the Art Institute of Chicago</div>
+<div class="item" data-value="School of Islamic and Social Sciences">School of Islamic and Social Sciences</div>
+<div class="item" data-value="School of the Museum of Fine Arts, Boston">School of the Museum of Fine Arts, Boston</div>
+<div class="item" data-value="School of the Visual Arts">School of the Visual Arts</div>
+<div class="item" data-value="Schreiner College">Schreiner College</div>
+<div class="item" data-value="Scripps College">Scripps College</div>
+<div class="item" data-value="The Scripps Research Institute">The Scripps Research Institute</div>
+<div class="item" data-value="Seattle Pacific University">Seattle Pacific University</div>
+<div class="item" data-value="Seattle University">Seattle University</div>
+<div class="item" data-value="Seton Hall University">Seton Hall University</div>
+<div class="item" data-value="Seton Hill College">Seton Hill College</div>
+<div class="item" data-value="Shasta Bible College">Shasta Bible College</div>
+<div class="item" data-value="Shawnee State University">Shawnee State University</div>
+<div class="item" data-value="Shaw University">Shaw University</div>
+<div class="item" data-value="Sheffield School of Interior Design">Sheffield School of Interior Design</div>
+<div class="item" data-value="Sheldon Jackson College">Sheldon Jackson College</div>
+<div class="item" data-value="Shenandoah University">Shenandoah University</div>
+<div class="item" data-value="Shepherd College">Shepherd College</div>
+<div class="item" data-value="Sherman College of Straight Chiropractic">Sherman College of Straight Chiropractic</div>
+<div class="item" data-value="Shimer College">Shimer College</div>
+<div class="item" data-value="Shippensburg University of Pennsylvania">Shippensburg University of Pennsylvania</div>
+<div class="item" data-value="Shorter College">Shorter College</div>
+<div class="item" data-value="Siena College">Siena College</div>
+<div class="item" data-value="Siena Heights University">Siena Heights University</div>
+<div class="item" data-value="Sierra Nevada College">Sierra Nevada College</div>
+<div class="item" data-value="Silver Lake College">Silver Lake College</div>
+<div class="item" data-value="Simmons College">Simmons College</div>
+<div class="item" data-value="Simon's Rock College">Simon's Rock College</div>
+<div class="item" data-value="Simpson College, Redding California">Simpson College, Redding California</div>
+<div class="item" data-value="Simpson College, Indianola Iowa">Simpson College, Indianola Iowa</div>
+<div class="item" data-value="Skidmore College">Skidmore College</div>
+<div class="item" data-value="Slippery Rock University">Slippery Rock University</div>
+<div class="item" data-value="Smith Chapel Bible College">Smith Chapel Bible College</div>
+<div class="item" data-value="Smith College">Smith College</div>
+<div class="item" data-value="Soka University of America">Soka University of America</div>
+<div class="item" data-value="Sonoma State University">Sonoma State University</div>
+<div class="item" data-value="South Carolina State University">South Carolina State University</div>
+<div class="item" data-value="South Dakota School of Mines and Technology">South Dakota School of Mines and Technology</div>
+<div class="item" data-value="South Dakota State University">South Dakota State University</div>
+<div class="item" data-value="South Pacific University">South Pacific University</div>
+<div class="item" data-value="South Texas College of Law">South Texas College of Law</div>
+<div class="item" data-value="Southampton College">Southampton College</div>
+<div class="item" data-value="Southeast College of Technology">Southeast College of Technology</div>
+<div class="item" data-value="Southeast Missouri State University">Southeast Missouri State University</div>
+<div class="item" data-value="Southeastern Bible College">Southeastern Bible College</div>
+<div class="item" data-value="Southeastern College">Southeastern College</div>
+<div class="item" data-value="Southeastern Louisiana University">Southeastern Louisiana University</div>
+<div class="item" data-value="Southeastern Oklahoma State University">Southeastern Oklahoma State University</div>
+<div class="item" data-value="Southeastern University">Southeastern University</div>
+<div class="item" data-value="Southern Adventist University">Southern Adventist University</div>
+<div class="item" data-value="Southern Arkansas University">Southern Arkansas University</div>
+<div class="item" data-value="Southern California University of Health Sciences">Southern California University of Health Sciences</div>
+<div class="item" data-value="Southern California University of Professional Studies">Southern California University of Professional Studies</div>
+<div class="item" data-value="Southern Connecticut State University">Southern Connecticut State University</div>
+<div class="item" data-value="Southern Illinois University at Carbondale">Southern Illinois University at Carbondale</div>
+<div class="item" data-value="Southern Illinois University at Edwardsville">Southern Illinois University at Edwardsville</div>
+<div class="item" data-value="Southern Illinois University Medical School at Springsfield">Southern Illinois University Medical School at Springsfield</div>
+<div class="item" data-value="Southern Methodist University">Southern Methodist University</div>
+<div class="item" data-value="Southern Nazarene University">Southern Nazarene University</div>
+<div class="item" data-value="Southern New Hampshire University">Southern New Hampshire University</div>
+<div class="item" data-value="Southern Oregon State College">Southern Oregon State College</div>
+<div class="item" data-value="Southern Oregon University">Southern Oregon University</div>
+<div class="item" data-value="Southern Polytechnic State Univerisity">Southern Polytechnic State Univerisity</div>
+<div class="item" data-value="Southern Vermont College">Southern Vermont College</div>
+<div class="item" data-value="Southern Virginia University">Southern Virginia University</div>
+<div class="item" data-value="Southern Wesleyan University">Southern Wesleyan University</div>
+<div class="item" data-value="Southern University, Baton Rouge">Southern University, Baton Rouge</div>
+<div class="item" data-value="Southern University, New Orleans">Southern University, New Orleans</div>
+<div class="item" data-value="Southern University, Shreveport-Bossier City">Southern University, Shreveport-Bossier City</div>
+<div class="item" data-value="Southern Utah University">Southern Utah University</div>
+<div class="item" data-value="Southwest Baptist University">Southwest Baptist University</div>
+<div class="item" data-value="Southwest Bible College and Seminary">Southwest Bible College and Seminary</div>
+<div class="item" data-value="Southwest Florida College">Southwest Florida College</div>
+<div class="item" data-value="Southwest Minnesota State University">Southwest Minnesota State University</div>
+<div class="item" data-value="Southwest University">Southwest University</div>
+<div class="item" data-value="Southwestern Adventist University">Southwestern Adventist University</div>
+<div class="item" data-value="Southwestern Assemblies of God University">Southwestern Assemblies of God University</div>
+<div class="item" data-value="Southwestern College, Kansas">Southwestern College, Kansas</div>
+<div class="item" data-value="Southwestern College, New Mexico">Southwestern College, New Mexico</div>
+<div class="item" data-value="Southwestern Oklahoma State University">Southwestern Oklahoma State University</div>
+<div class="item" data-value="Southwestern University">Southwestern University</div>
+<div class="item" data-value="Southwestern University School of Law">Southwestern University School of Law</div>
+<div class="item" data-value="Spalding University">Spalding University</div>
+<div class="item" data-value="Spartanburg Methodist College">Spartanburg Methodist College</div>
+<div class="item" data-value="Spelman College">Spelman College</div>
+<div class="item" data-value="Spertus College">Spertus College</div>
+<div class="item" data-value="Spring Arbor College">Spring Arbor College</div>
+<div class="item" data-value="Spring Hill College">Spring Hill College</div>
+<div class="item" data-value="Springfield College">Springfield College</div>
+<div class="item" data-value="Stamford International College">Stamford International College</div>
+<div class="item" data-value="Stanford University">Stanford University</div>
+<div class="item" data-value="State University of New York at Albany">State University of New York at Albany</div>
+<div class="item" data-value="State University of New York at Binghamton">State University of New York at Binghamton</div>
+<div class="item" data-value="State University of New York at Buffalo">State University of New York at Buffalo</div>
+<div class="item" data-value="State University of New York at Oswego">State University of New York at Oswego</div>
+<div class="item" data-value="State University of New York at Stony Brook">State University of New York at Stony Brook</div>
+<div class="item" data-value="State University of New York College of Agriculture and Technology, Cobleskill">State University of New York College of Agriculture and Technology, Cobleskill</div>
+<div class="item" data-value="State University of New York College of Agriculture and Technology, Morrisville">State University of New York College of Agriculture and Technology, Morrisville</div>
+<div class="item" data-value="State University of New York College at Brockport">State University of New York College at Brockport</div>
+<div class="item" data-value="State University of New York College at Buffalo (Buffalo State College)">State University of New York College at Buffalo (Buffalo State College)</div>
+<div class="item" data-value="State University of New York College at Cortland">State University of New York College at Cortland</div>
+<div class="item" data-value="State University of New York College of Environmental Science and Forestry">State University of New York College of Environmental Science and Forestry</div>
+<div class="item" data-value="State University of New York College at Farmingdale">State University of New York College at Farmingdale</div>
+<div class="item" data-value="State University of New York College at Fredonia">State University of New York College at Fredonia</div>
+<div class="item" data-value="State University of New York College at Geneseo">State University of New York College at Geneseo</div>
+<div class="item" data-value="State University of New York College Maritime College at Fort Schuyler">State University of New York College Maritime College at Fort Schuyler</div>
+<div class="item" data-value="State University of New York College at New Paltz">State University of New York College at New Paltz</div>
+<div class="item" data-value="State University of New York College at Old Westbury">State University of New York College at Old Westbury</div>
+<div class="item" data-value="State University of New York College at Oneonta">State University of New York College at Oneonta</div>
+<div class="item" data-value="State University of New York College at Oswego">State University of New York College at Oswego</div>
+<div class="item" data-value="State University of New York College at Plattsburgh">State University of New York College at Plattsburgh</div>
+<div class="item" data-value="State University of New York College at Potsdam">State University of New York College at Potsdam</div>
+<div class="item" data-value="State University of New York College at Purchase">State University of New York College at Purchase</div>
+<div class="item" data-value="State University of New York Institute of Technology at Canton">State University of New York Institute of Technology at Canton</div>
+<div class="item" data-value="State University of New York Institute of Technology at Delhi">State University of New York Institute of Technology at Delhi</div>
+<div class="item" data-value="State University of New York Institute of Technology at Utica/Rome">State University of New York Institute of Technology at Utica/Rome</div>
+<div class="item" data-value="The Stefan University">The Stefan University</div>
+<div class="item" data-value="Stephen F. Austin State University">Stephen F. Austin State University</div>
+<div class="item" data-value="Stephens College">Stephens College</div>
+<div class="item" data-value="Sterling College, Sterling Kansas">Sterling College, Sterling Kansas</div>
+<div class="item" data-value="Sterling College, Kansas">Sterling College, Kansas</div>
+<div class="item" data-value="Sterling College, Vermont">Sterling College, Vermont</div>
+<div class="item" data-value="Stetson University">Stetson University</div>
+<div class="item" data-value="Stevens-Henager College">Stevens-Henager College</div>
+<div class="item" data-value="Stevens Institute of Technology">Stevens Institute of Technology</div>
+<div class="item" data-value="Stevenson University">Stevenson University</div>
+<div class="item" data-value="Stillman College">Stillman College</div>
+<div class="item" data-value="Stonehill College">Stonehill College</div>
+<div class="item" data-value="Stratford University">Stratford University</div>
+<div class="item" data-value="Strayer University">Strayer University</div>
+<div class="item" data-value="Suffolk University">Suffolk University</div>
+<div class="item" data-value="Sul Ross State University">Sul Ross State University</div>
+<div class="item" data-value="Summit University of Louisiana">Summit University of Louisiana</div>
+<div class="item" data-value="Susquehanna University">Susquehanna University</div>
+<div class="item" data-value="Swarthmore College">Swarthmore College</div>
+<div class="item" data-value="Sweet Briar College">Sweet Briar College</div>
+<div class="item" data-value="Syracuse University">Syracuse University</div>
+<div class="item" data-value="Tabor College">Tabor College</div>
+<div class="item" data-value="Talladega College">Talladega College</div>
+<div class="item" data-value="Tarleton State University">Tarleton State University</div>
+<div class="item" data-value="Taylor University">Taylor University</div>
+<div class="item" data-value="Teachers College">Teachers College</div>
+<div class="item" data-value="Teikyo Marycrest University">Teikyo Marycrest University</div>
+<div class="item" data-value="Teikyo Post University">Teikyo Post University</div>
+<div class="item" data-value="Temple University">Temple University</div>
+<div class="item" data-value="Tennessee State University">Tennessee State University</div>
+<div class="item" data-value="Tennessee Technological University">Tennessee Technological University</div>
+<div class="item" data-value="Tennessee Temple University">Tennessee Temple University</div>
+<div class="item" data-value="Tennessee Wesleyan College">Tennessee Wesleyan College</div>
+<div class="item" data-value="Texas A&M International University">Texas A&M International University</div>
+<div class="item" data-value="Texas A&M University">Texas A&M University</div>
+<div class="item" data-value="Texas A&M University, Commerce">Texas A&M University, Commerce</div>
+<div class="item" data-value="Texas A&M University, Corpus Christi">Texas A&M University, Corpus Christi</div>
+<div class="item" data-value="Texas A&M University, Galveston">Texas A&M University, Galveston</div>
+<div class="item" data-value="Texas A&M University, Kingsville">Texas A&M University, Kingsville</div>
+<div class="item" data-value="Texas A&M University, Texarkana">Texas A&M University, Texarkana</div>
+<div class="item" data-value="Texas Chiropractic College">Texas Chiropractic College</div>
+<div class="item" data-value="Texas Christian University">Texas Christian University</div>
+<div class="item" data-value="Texas Lutheran University">Texas Lutheran University</div>
+<div class="item" data-value="Texas Southern University">Texas Southern University</div>
+<div class="item" data-value="Texas State University">Texas State University</div>
+<div class="item" data-value="Texas Tech University">Texas Tech University</div>
+<div class="item" data-value="Texas Wesleyan University">Texas Wesleyan University</div>
+<div class="item" data-value="Texas Woman's University">Texas Woman's University</div>
+<div class="item" data-value="Thiel College">Thiel College</div>
+<div class="item" data-value="Thomas Aquinas College, Santa Paula CA">Thomas Aquinas College, Santa Paula CA</div>
+<div class="item" data-value="Thomas Edison State College">Thomas Edison State College</div>
+<div class="item" data-value="Thomas College">Thomas College</div>
+<div class="item" data-value="Thomas Cooley Law School">Thomas Cooley Law School</div>
+<div class="item" data-value="Thomas More College">Thomas More College</div>
+<div class="item" data-value="Thomas Jefferson University">Thomas Jefferson University</div>
+<div class="item" data-value="Thunderbird School of Global Management">Thunderbird School of Global Management</div>
+<div class="item" data-value="Toccoa Falls College">Toccoa Falls College</div>
+<div class="item" data-value="Tougaloo College">Tougaloo College</div>
+<div class="item" data-value="Touro College">Touro College</div>
+<div class="item" data-value="Towson University">Towson University</div>
+<div class="item" data-value="The Transworld University">The Transworld University</div>
+<div class="item" data-value="Transylvania University">Transylvania University</div>
+<div class="item" data-value="Trevecca Nazarene University">Trevecca Nazarene University</div>
+<div class="item" data-value="Trinity Baptist College">Trinity Baptist College</div>
+<div class="item" data-value="Trinity Christian College">Trinity Christian College</div>
+<div class="item" data-value="Trinity College, Hartford Connecticut">Trinity College, Hartford Connecticut</div>
+<div class="item" data-value="Trinity College of Florida">Trinity College of Florida</div>
+<div class="item" data-value="Trinity College, Washington DC">Trinity College, Washington DC</div>
+<div class="item" data-value="Trinity International University">Trinity International University</div>
+<div class="item" data-value="Trinity University">Trinity University</div>
+<div class="item" data-value="Tri-State University">Tri-State University</div>
+<div class="item" data-value="Troy State University">Troy State University</div>
+<div class="item" data-value="Troy State University - Dothan">Troy State University - Dothan</div>
+<div class="item" data-value="Truman State University">Truman State University</div>
+<div class="item" data-value="Tufts University">Tufts University</div>
+<div class="item" data-value="Tulane University">Tulane University</div>
+<div class="item" data-value="Tusculum College">Tusculum College</div>
+<div class="item" data-value="Tuskegee University">Tuskegee University</div>
+<div class="item" data-value="Uniformed Services Universty of the Health Sciences">Uniformed Services Universty of the Health Sciences</div>
+<div class="item" data-value="Union College, Barbourville KY">Union College, Barbourville KY</div>
+<div class="item" data-value="Union College">Union College</div>
+<div class="item" data-value="Union College">Union College</div>
+<div class="item" data-value="Union Theological Seminary">Union Theological Seminary</div>
+<div class="item" data-value="Union University">Union University</div>
+<div class="item" data-value="The Union Institute">The Union Institute</div>
+<div class="item" data-value="United States Air Force Academy">United States Air Force Academy</div>
+<div class="item" data-value="United States Coast Guard Academy">United States Coast Guard Academy</div>
+<div class="item" data-value="United States Merchant Marine Academy">United States Merchant Marine Academy</div>
+<div class="item" data-value="United States Military Academy">United States Military Academy</div>
+<div class="item" data-value="United States Naval Academy">United States Naval Academy</div>
+<div class="item" data-value="United States Open University">United States Open University</div>
+<div class="item" data-value="United States Sports Academy">United States Sports Academy</div>
+<div class="item" data-value="United Theological Seminar">United Theological Seminar</div>
+<div class="item" data-value="Unity College">Unity College</div>
+<div class="item" data-value="University of Advancing Technology">University of Advancing Technology</div>
+<div class="item" data-value="University of Akron">University of Akron</div>
+<div class="item" data-value="University of Alabama">University of Alabama</div>
+<div class="item" data-value="University of Alabama, Birmingham">University of Alabama, Birmingham</div>
+<div class="item" data-value="University of Alabama, Huntsville">University of Alabama, Huntsville</div>
+<div class="item" data-value="University of Alaska, Anchorage">University of Alaska, Anchorage</div>
+<div class="item" data-value="University of Alaska, Fairbanks">University of Alaska, Fairbanks</div>
+<div class="item" data-value="University of Alaska, Southeast">University of Alaska, Southeast</div>
+<div class="item" data-value="University of Arizona">University of Arizona</div>
+<div class="item" data-value="University of Arkansas, Fayetteville">University of Arkansas, Fayetteville</div>
+<div class="item" data-value="University of Arkansas at Little Rock">University of Arkansas at Little Rock</div>
+<div class="item" data-value="University of Arkansas at Monticello">University of Arkansas at Monticello</div>
+<div class="item" data-value="University of Arkansas at Pine Bluff">University of Arkansas at Pine Bluff</div>
+<div class="item" data-value="University of the Arts">University of the Arts</div>
+<div class="item" data-value="University of Baltimore">University of Baltimore</div>
+<div class="item" data-value="University of Bridgeport">University of Bridgeport</div>
+<div class="item" data-value="University of California, Berkeley">University of California, Berkeley</div>
+<div class="item" data-value="University of California, Davis">University of California, Davis</div>
+<div class="item" data-value="University of California, Hastings College of Law">University of California, Hastings College of Law</div>
+<div class="item" data-value="University of California, Irvine">University of California, Irvine</div>
+<div class="item" data-value="University of California, Los Angeles">University of California, Los Angeles</div>
+<div class="item" data-value="University of California, Merced">University of California, Merced</div>
+<div class="item" data-value="University of California, Riverside">University of California, Riverside</div>
+<div class="item" data-value="University of California, San Diego">University of California, San Diego</div>
+<div class="item" data-value="University of California, San Francisco">University of California, San Francisco</div>
+<div class="item" data-value="University of California, Santa Barbara">University of California, Santa Barbara</div>
+<div class="item" data-value="University of California, Santa Cruz">University of California, Santa Cruz</div>
+<div class="item" data-value="University of Central Arkansas">University of Central Arkansas</div>
+<div class="item" data-value="University of Central Florida">University of Central Florida</div>
+<div class="item" data-value="University of Central Oklahoma">University of Central Oklahoma</div>
+<div class="item" data-value="University of Charleston">University of Charleston</div>
+<div class="item" data-value="University of Chicago">University of Chicago</div>
+<div class="item" data-value="University of Cincinnati">University of Cincinnati</div>
+<div class="item" data-value="University of Colorado at Boulder">University of Colorado at Boulder</div>
+<div class="item" data-value="University of Colorado, Colorado Springs">University of Colorado, Colorado Springs</div>
+<div class="item" data-value="University of Colorado, Denver">University of Colorado, Denver</div>
+<div class="item" data-value="University of Connecticut">University of Connecticut</div>
+<div class="item" data-value="University of Dallas">University of Dallas</div>
+<div class="item" data-value="University of Dayton">University of Dayton</div>
+<div class="item" data-value="University of Delaware">University of Delaware</div>
+<div class="item" data-value="University of Denver">University of Denver</div>
+<div class="item" data-value="University of Detroit Mercy">University of Detroit Mercy</div>
+<div class="item" data-value="University of the District of Columbia">University of the District of Columbia</div>
+<div class="item" data-value="University of Dubuque">University of Dubuque</div>
+<div class="item" data-value="University of Evansville">University of Evansville</div>
+<div class="item" data-value="University of Findlay">University of Findlay</div>
+<div class="item" data-value="University of Florida">University of Florida</div>
+<div class="item" data-value="University of Georgia">University of Georgia</div>
+<div class="item" data-value="University of Great Falls">University of Great Falls</div>
+<div class="item" data-value="University of Guam">University of Guam</div>
+<div class="item" data-value="University of Hartford">University of Hartford</div>
+<div class="item" data-value="University of Hawai`i">University of Hawai`i</div>
+<div class="item" data-value="University of Hawai`i, Hilo">University of Hawai`i, Hilo</div>
+<div class="item" data-value="University of Hawai`i, Manoa">University of Hawai`i, Manoa</div>
+<div class="item" data-value="University of Hawai`i, West O`ahu">University of Hawai`i, West O`ahu</div>
+<div class="item" data-value="University of Health Sciences College of Osteopathic Medicine">University of Health Sciences College of Osteopathic Medicine</div>
+<div class="item" data-value="University of Houston">University of Houston</div>
+<div class="item" data-value="University of Houston, Clear Lake">University of Houston, Clear Lake</div>
+<div class="item" data-value="University of Houston, Downtown">University of Houston, Downtown</div>
+<div class="item" data-value="University of Houston, Victoria">University of Houston, Victoria</div>
+<div class="item" data-value="University of Idaho">University of Idaho</div>
+<div class="item" data-value="University of the Incarnate Word">University of the Incarnate Word</div>
+<div class="item" data-value="University of Indianapolis">University of Indianapolis</div>
+<div class="item" data-value="University of Illinois at Chicago">University of Illinois at Chicago</div>
+<div class="item" data-value="University of Illinois at Springfield">University of Illinois at Springfield</div>
+<div class="item" data-value="University of Illinois at Urbana-Champaign">University of Illinois at Urbana-Champaign</div>
+<div class="item" data-value="University of Iowa">University of Iowa</div>
+<div class="item" data-value="University of Kansas">University of Kansas</div>
+<div class="item" data-value="University of Kansas Medical Center">University of Kansas Medical Center</div>
+<div class="item" data-value="University of Kentucky">University of Kentucky</div>
+<div class="item" data-value="University of La Vernee">University of La Vernee</div>
+<div class="item" data-value="University of Louisiana at Lafayette">University of Louisiana at Lafayette</div>
+<div class="item" data-value="University of Louisiana at Monroe">University of Louisiana at Monroe</div>
+<div class="item" data-value="University of Louisville">University of Louisville</div>
+<div class="item" data-value="University of Maine">University of Maine</div>
+<div class="item" data-value="University of Maine at Farmington">University of Maine at Farmington</div>
+<div class="item" data-value="University of Maine at Fort Kent">University of Maine at Fort Kent</div>
+<div class="item" data-value="University of Maine at Presque Isle">University of Maine at Presque Isle</div>
+<div class="item" data-value="University of Mary Hardin-Baylor">University of Mary Hardin-Baylor</div>
+<div class="item" data-value="University of Mary Washington">University of Mary Washington</div>
+<div class="item" data-value="University of Maryland Baltimore County">University of Maryland Baltimore County</div>
+<div class="item" data-value="University of Maryland at Baltimore">University of Maryland at Baltimore</div>
+<div class="item" data-value="University of Maryland at College Park">University of Maryland at College Park</div>
+<div class="item" data-value="University of Maryland Eastern Shore">University of Maryland Eastern Shore</div>
+<div class="item" data-value="University of Maryland University College">University of Maryland University College</div>
+<div class="item" data-value="University of Massachusetts at Amherst">University of Massachusetts at Amherst</div>
+<div class="item" data-value="University of Massachusetts at Boston">University of Massachusetts at Boston</div>
+<div class="item" data-value="University of Massachusetts at Dartmouth">University of Massachusetts at Dartmouth</div>
+<div class="item" data-value="University of Massachusetts at Lowell">University of Massachusetts at Lowell</div>
+<div class="item" data-value="University of Massachusetts Medical School">University of Massachusetts Medical School</div>
+<div class="item" data-value="University of Medicine and Dentistry of New Jersey">University of Medicine and Dentistry of New Jersey</div>
+<div class="item" data-value="University of Memphis">University of Memphis</div>
+<div class="item" data-value="University of Miami">University of Miami</div>
+<div class="item" data-value="University of Michigan-Ann Arbor">University of Michigan-Ann Arbor</div>
+<div class="item" data-value="University of Michigan-Dearborn">University of Michigan-Dearborn</div>
+<div class="item" data-value="University of Michigan-Flint">University of Michigan-Flint</div>
+<div class="item" data-value="University of Minnesota-Crookston">University of Minnesota-Crookston</div>
+<div class="item" data-value="University of Minnesota-Duluth">University of Minnesota-Duluth</div>
+<div class="item" data-value="University of Minnesota-Morris">University of Minnesota-Morris</div>
+<div class="item" data-value="University of Minnesota-Twin Cities">University of Minnesota-Twin Cities</div>
+<div class="item" data-value="University of Mississippi">University of Mississippi</div>
+<div class="item" data-value="University of Missouri-Columbia">University of Missouri-Columbia</div>
+<div class="item" data-value="University of Missouri-Kansas City">University of Missouri-Kansas City</div>
+<div class="item" data-value="University of Missouri-Saint Louis">University of Missouri-Saint Louis</div>
+<div class="item" data-value="University of Montana, Missoula">University of Montana, Missoula</div>
+<div class="item" data-value="University of Montevallo">University of Montevallo</div>
+<div class="item" data-value="University of Natural Medicine">University of Natural Medicine</div>
+<div class="item" data-value="University of Nebraska, Kearney">University of Nebraska, Kearney</div>
+<div class="item" data-value="University of Nebraska, Lincoln">University of Nebraska, Lincoln</div>
+<div class="item" data-value="University of Nebraska, Omaha">University of Nebraska, Omaha</div>
+<div class="item" data-value="University of Nevada, Las Vegas">University of Nevada, Las Vegas</div>
+<div class="item" data-value="University of Nevada, Reno">University of Nevada, Reno</div>
+<div class="item" data-value="University of New England">University of New England</div>
+<div class="item" data-value="University of New Hampshire, Durham">University of New Hampshire, Durham</div>
+<div class="item" data-value="University of New Haven">University of New Haven</div>
+<div class="item" data-value="University of New Mexico">University of New Mexico</div>
+<div class="item" data-value="University of New Orleans">University of New Orleans</div>
+<div class="item" data-value="University of Newport">University of Newport</div>
+<div class="item" data-value="University of North Alabama">University of North Alabama</div>
+<div class="item" data-value="University of North Carolina at Asheville">University of North Carolina at Asheville</div>
+<div class="item" data-value="University of North Carolina at Chapel Hill">University of North Carolina at Chapel Hill</div>
+<div class="item" data-value="University of North Carolina at Charlotte">University of North Carolina at Charlotte</div>
+<div class="item" data-value="University of North Carolina at Greensboro">University of North Carolina at Greensboro</div>
+<div class="item" data-value="University of North Carolina at Pembroke">University of North Carolina at Pembroke</div>
+<div class="item" data-value="University of North Carolina at Wilmington">University of North Carolina at Wilmington</div>
+<div class="item" data-value="University of North Dakota">University of North Dakota</div>
+<div class="item" data-value="University of North Dakota--Lake Region">University of North Dakota--Lake Region</div>
+<div class="item" data-value="University of North Florida">University of North Florida</div>
+<div class="item" data-value="University of North Texas">University of North Texas</div>
+<div class="item" data-value="University of Northern Colorado">University of Northern Colorado</div>
+<div class="item" data-value="University of Northern Iowa">University of Northern Iowa</div>
+<div class="item" data-value="University of Notre Dame">University of Notre Dame</div>
+<div class="item" data-value="University of Oklahoma">University of Oklahoma</div>
+<div class="item" data-value="University of Oregon">University of Oregon</div>
+<div class="item" data-value="University of Orlando">University of Orlando</div>
+<div class="item" data-value="University of Osteopathic Medicine and Health Science">University of Osteopathic Medicine and Health Science</div>
+<div class="item" data-value="University of the Ozarks">University of the Ozarks</div>
+<div class="item" data-value="University of the Pacific">University of the Pacific</div>
+<div class="item" data-value="University of Pennsylvania">University of Pennsylvania</div>
+<div class="item" data-value="University of Phoenix">University of Phoenix</div>
+<div class="item" data-value="University of Pittsburgh">University of Pittsburgh</div>
+<div class="item" data-value="University of Pittsburgh at Bradford">University of Pittsburgh at Bradford</div>
+<div class="item" data-value="University of Pittsburgh at Greenburg">University of Pittsburgh at Greenburg</div>
+<div class="item" data-value="University of Pittsburgh at Johnstown">University of Pittsburgh at Johnstown</div>
+<div class="item" data-value="University of Portland">University of Portland</div>
+<div class="item" data-value="University of Puerto Rico, Mayaguez">University of Puerto Rico, Mayaguez</div>
+<div class="item" data-value="University of Puerto Rico, Rio Piedras">University of Puerto Rico, Rio Piedras</div>
+<div class="item" data-value="University of Puget Sound">University of Puget Sound</div>
+<div class="item" data-value="University of Redlands">University of Redlands</div>
+<div class="item" data-value="University of Rhode Island">University of Rhode Island</div>
+<div class="item" data-value="University of Richmond">University of Richmond</div>
+<div class="item" data-value="University of Rio Grande">University of Rio Grande</div>
+<div class="item" data-value="University of Rochester">University of Rochester</div>
+<div class="item" data-value="University of Saint Francis">University of Saint Francis</div>
+<div class="item" data-value="University of Saint Mary">University of Saint Mary</div>
+<div class="item" data-value="University of Saint Thomas, Houston">University of Saint Thomas, Houston</div>
+<div class="item" data-value="University of Saint Thomas, Saint Paul">University of Saint Thomas, Saint Paul</div>
+<div class="item" data-value="University of San Diego">University of San Diego</div>
+<div class="item" data-value="University of San Francisco">University of San Francisco</div>
+<div class="item" data-value="University of Sarasota">University of Sarasota</div>
+<div class="item" data-value="University of Science and Arts of Oklahoma">University of Science and Arts of Oklahoma</div>
+<div class="item" data-value="University of the Sciences in Philadelphia">University of the Sciences in Philadelphia</div>
+<div class="item" data-value="University of Scranton">University of Scranton</div>
+<div class="item" data-value="University of Sioux Falls">University of Sioux Falls</div>
+<div class="item" data-value="University of the South">University of the South</div>
+<div class="item" data-value="University of South Alabama">University of South Alabama</div>
+<div class="item" data-value="University of South Carolina">University of South Carolina</div>
+<div class="item" data-value="University of South Carolina, Aiken">University of South Carolina, Aiken</div>
+<div class="item" data-value="University of South Carolina, Beaufort">University of South Carolina, Beaufort</div>
+<div class="item" data-value="University of South Carolina, Spartanburg">University of South Carolina, Spartanburg</div>
+<div class="item" data-value="University of South Dakota">University of South Dakota</div>
+<div class="item" data-value="University of South Florida">University of South Florida</div>
+<div class="item" data-value="University of Southern California">University of Southern California</div>
+<div class="item" data-value="University of Southern Indiana">University of Southern Indiana</div>
+<div class="item" data-value="University of Southern Maine">University of Southern Maine</div>
+<div class="item" data-value="University of Southern Mississippi">University of Southern Mississippi</div>
+<div class="item" data-value="University of Tampa">University of Tampa</div>
+<div class="item" data-value="University of Tennessee, Chattanooga">University of Tennessee, Chattanooga</div>
+<div class="item" data-value="University of Tennessee Health Science Center">University of Tennessee Health Science Center</div>
+<div class="item" data-value="University of Tennessee, Knoxville">University of Tennessee, Knoxville</div>
+<div class="item" data-value="University of Tennessee, Martin">University of Tennessee, Martin</div>
+<div class="item" data-value="University of Texas at Arlington">University of Texas at Arlington</div>
+<div class="item" data-value="University of Texas at Austin">University of Texas at Austin</div>
+<div class="item" data-value="University of Texas at Brownsville">University of Texas at Brownsville</div>
+<div class="item" data-value="University of Texas at Dallas">University of Texas at Dallas</div>
+<div class="item" data-value="University of Texas at El Paso">University of Texas at El Paso</div>
+<div class="item" data-value="University of Texas Health Science Center at Houston">University of Texas Health Science Center at Houston</div>
+<div class="item" data-value="University of Texas Health Science Center at San Antonio">University of Texas Health Science Center at San Antonio</div>
+<div class="item" data-value="University of Texas Health Center at Tyler">University of Texas Health Center at Tyler</div>
+<div class="item" data-value="University of Texas Medical Branch">University of Texas Medical Branch</div>
+<div class="item" data-value="University of Texas-Pan American">University of Texas-Pan American</div>
+<div class="item" data-value="University of Texas of the Permian Basin">University of Texas of the Permian Basin</div>
+<div class="item" data-value="University of Texas at San Antonio">University of Texas at San Antonio</div>
+<div class="item" data-value="University of Texas at Tyler">University of Texas at Tyler</div>
+<div class="item" data-value="University of Texas Southwestern Medical Center">University of Texas Southwestern Medical Center</div>
+<div class="item" data-value="University of the Southwest">University of the Southwest</div>
+<div class="item" data-value="University of Toledo">University of Toledo</div>
+<div class="item" data-value="University of Tulsa">University of Tulsa</div>
+<div class="item" data-value="University of Utah">University of Utah</div>
+<div class="item" data-value="University of Vermont">University of Vermont</div>
+<div class="item" data-value="University of the Virgin Islands">University of the Virgin Islands</div>
+<div class="item" data-value="University of Virginia">University of Virginia</div>
+<div class="item" data-value="University of Washington">University of Washington</div>
+<div class="item" data-value="University of West Alabama">University of West Alabama</div>
+<div class="item" data-value="University of West Florida">University of West Florida</div>
+<div class="item" data-value="University of West Georgia">University of West Georgia</div>
+<div class="item" data-value="University of Wisconsin-Green Bay">University of Wisconsin-Green Bay</div>
+<div class="item" data-value="University of Wisconsin-Eau Claire">University of Wisconsin-Eau Claire</div>
+<div class="item" data-value="University of Wisconsin-La Crosse">University of Wisconsin-La Crosse</div>
+<div class="item" data-value="University of Wisconsin-Madison">University of Wisconsin-Madison</div>
+<div class="item" data-value="University of Wisconsin-Milwaukee">University of Wisconsin-Milwaukee</div>
+<div class="item" data-value="University of Wisconsin-Oshkosh">University of Wisconsin-Oshkosh</div>
+<div class="item" data-value="University of Wisconsin-Parkside">University of Wisconsin-Parkside</div>
+<div class="item" data-value="University of Wisconsin-Platteville">University of Wisconsin-Platteville</div>
+<div class="item" data-value="University of Wisconsin-Stevens Point">University of Wisconsin-Stevens Point</div>
+<div class="item" data-value="University of Wisconsin-Stout">University of Wisconsin-Stout</div>
+<div class="item" data-value="University of Wisconsin-Superior">University of Wisconsin-Superior</div>
+<div class="item" data-value="University of Wisconsin-River Falls">University of Wisconsin-River Falls</div>
+<div class="item" data-value="University of Wisconsin-Whitewater">University of Wisconsin-Whitewater</div>
+<div class="item" data-value="University of Wyoming">University of Wyoming</div>
+<div class="item" data-value="Upper Iowa University">Upper Iowa University</div>
+<div class="item" data-value="Urbana University">Urbana University</div>
+<div class="item" data-value="Ursinus College">Ursinus College</div>
+<div class="item" data-value="Ursuline College">Ursuline College</div>
+<div class="item" data-value="Utah State University">Utah State University</div>
+<div class="item" data-value="Utah Valley State College">Utah Valley State College</div>
+<div class="item" data-value="Utica College">Utica College</div>
+<div class="item" data-value="Valdosta State University">Valdosta State University</div>
+<div class="item" data-value="Valley City State University">Valley City State University</div>
+<div class="item" data-value="Valparaiso University">Valparaiso University</div>
+<div class="item" data-value="Vanderbilt University">Vanderbilt University</div>
+<div class="item" data-value="Vanguard University">Vanguard University</div>
+<div class="item" data-value="Vassar College">Vassar College</div>
+<div class="item" data-value="Vaughn College of Aeronautics">Vaughn College of Aeronautics</div>
+<div class="item" data-value="Vennard College">Vennard College</div>
+<div class="item" data-value="Vermont Technical College">Vermont Technical College</div>
+<div class="item" data-value="Villanova University">Villanova University</div>
+<div class="item" data-value="Virginia Commonwealth University">Virginia Commonwealth University</div>
+<div class="item" data-value="Virginia Intermont College">Virginia Intermont College</div>
+<div class="item" data-value="Virginia International University">Virginia International University</div>
+<div class="item" data-value="Virginia Military Institute">Virginia Military Institute</div>
+<div class="item" data-value="Virginia Polytechnic Institute and State University">Virginia Polytechnic Institute and State University</div>
+<div class="item" data-value="Virginia State University">Virginia State University</div>
+<div class="item" data-value="Virginia Union University">Virginia Union University</div>
+<div class="item" data-value="Virginia University of Lynchburg">Virginia University of Lynchburg</div>
+<div class="item" data-value="Virginia Wesleyan College">Virginia Wesleyan College</div>
+<div class="item" data-value="Viterbo College">Viterbo College</div>
+<div class="item" data-value="Voorhees College">Voorhees College</div>
+<div class="item" data-value="Wabash College">Wabash College</div>
+<div class="item" data-value="Wagner College">Wagner College</div>
+<div class="item" data-value="Wake Forest University">Wake Forest University</div>
+<div class="item" data-value="Warner Pacific College">Warner Pacific College</div>
+<div class="item" data-value="Wartburg College">Wartburg College</div>
+<div class="item" data-value="Walden University">Walden University</div>
+<div class="item" data-value="Waldorf College">Waldorf College</div>
+<div class="item" data-value="Walla Walla University">Walla Walla University</div>
+<div class="item" data-value="Walsh University">Walsh University</div>
+<div class="item" data-value="Warren Wilson College">Warren Wilson College</div>
+<div class="item" data-value="Washburn University">Washburn University</div>
+<div class="item" data-value="Washington & Jefferson College">Washington & Jefferson College</div>
+<div class="item" data-value="Washington & Lee University">Washington & Lee University</div>
+<div class="item" data-value="Washington Bible College / Capital Bible Seminary">Washington Bible College / Capital Bible Seminary</div>
+<div class="item" data-value="Washington College">Washington College</div>
+<div class="item" data-value="Washington State University">Washington State University</div>
+<div class="item" data-value="Washington University in Saint Louis">Washington University in Saint Louis</div>
+<div class="item" data-value="Watkins College of Art, Design and Film">Watkins College of Art, Design and Film</div>
+<div class="item" data-value="Wayland Baptist University">Wayland Baptist University</div>
+<div class="item" data-value="Wayne State College">Wayne State College</div>
+<div class="item" data-value="Wayne State University">Wayne State University</div>
+<div class="item" data-value="Waynesburg College">Waynesburg College</div>
+<div class="item" data-value="Webb Institute">Webb Institute</div>
+<div class="item" data-value="Weber State University">Weber State University</div>
+<div class="item" data-value="Webster University">Webster University</div>
+<div class="item" data-value="Webster University North Florida">Webster University North Florida</div>
+<div class="item" data-value="Webster University Orlando">Webster University Orlando</div>
+<div class="item" data-value="Wellesley College">Wellesley College</div>
+<div class="item" data-value="Wells College">Wells College</div>
+<div class="item" data-value="Wentworth Institute of Technology">Wentworth Institute of Technology</div>
+<div class="item" data-value="Wesley College">Wesley College</div>
+<div class="item" data-value="Wesleyan College">Wesleyan College</div>
+<div class="item" data-value="Wesleyan University">Wesleyan University</div>
+<div class="item" data-value="West Coast University">West Coast University</div>
+<div class="item" data-value="West Chester University of Pennsylvania">West Chester University of Pennsylvania</div>
+<div class="item" data-value="West Liberty State College">West Liberty State College</div>
+<div class="item" data-value="West Texas A&M University">West Texas A&M University</div>
+<div class="item" data-value="West Virginia State University">West Virginia State University</div>
+<div class="item" data-value="West Virginia University">West Virginia University</div>
+<div class="item" data-value="West Virginia University Parkersburg">West Virginia University Parkersburg</div>
+<div class="item" data-value="West Virginia Wesleyan College">West Virginia Wesleyan College</div>
+<div class="item" data-value="Western Baptist College">Western Baptist College</div>
+<div class="item" data-value="Western Carolina University">Western Carolina University</div>
+<div class="item" data-value="Western Connecticut State University">Western Connecticut State University</div>
+<div class="item" data-value="Western Governors University">Western Governors University</div>
+<div class="item" data-value="Western Illinois University">Western Illinois University</div>
+<div class="item" data-value="Western International University">Western International University</div>
+<div class="item" data-value="Western Kentucky University">Western Kentucky University</div>
+<div class="item" data-value="Western Maryland College">Western Maryland College</div>
+<div class="item" data-value="Western Michigan University">Western Michigan University</div>
+<div class="item" data-value="Western Montana College">Western Montana College</div>
+<div class="item" data-value="Western New England College">Western New England College</div>
+<div class="item" data-value="Western New Mexico University">Western New Mexico University</div>
+<div class="item" data-value="Western Oregon University">Western Oregon University</div>
+<div class="item" data-value="Western State College">Western State College</div>
+<div class="item" data-value="Western State University College of Law">Western State University College of Law</div>
+<div class="item" data-value="Western States Chiropractic College">Western States Chiropractic College</div>
+<div class="item" data-value="Western University of Health Sciences">Western University of Health Sciences</div>
+<div class="item" data-value="Western Washington University">Western Washington University</div>
+<div class="item" data-value="Westfield State College">Westfield State College</div>
+<div class="item" data-value="Westminster College, Fulton Missouri">Westminster College, Fulton Missouri</div>
+<div class="item" data-value="Westminster College, New Wilmington Pennsylvania">Westminster College, New Wilmington Pennsylvania</div>
+<div class="item" data-value="Westminster College, Salt Lake City">Westminster College, Salt Lake City</div>
+<div class="item" data-value="Westminster Theological Seminary">Westminster Theological Seminary</div>
+<div class="item" data-value="Westminster Theological Seminary in California">Westminster Theological Seminary in California</div>
+<div class="item" data-value="Westmont College">Westmont College</div>
+<div class="item" data-value="Westwood College — California">Westwood College — California</div>
+<div class="item" data-value="Westwood College — Colorado">Westwood College — Colorado</div>
+<div class="item" data-value="Westwood College — Georgia">Westwood College — Georgia</div>
+<div class="item" data-value="Westwood College — Illinois">Westwood College — Illinois</div>
+<div class="item" data-value="Westwood College — Texas">Westwood College — Texas</div>
+<div class="item" data-value="Westwood College — Virginia">Westwood College — Virginia</div>
+<div class="item" data-value="Westwood College of Technology">Westwood College of Technology</div>
+<div class="item" data-value="Wheaton College, Wheaton Illinois">Wheaton College, Wheaton Illinois</div>
+<div class="item" data-value="Wheaton College, Massachusetts">Wheaton College, Massachusetts</div>
+<div class="item" data-value="Wheeling Jesuit University">Wheeling Jesuit University</div>
+<div class="item" data-value="Wheelock College">Wheelock College</div>
+<div class="item" data-value="Whitman College">Whitman College</div>
+<div class="item" data-value="Whittier College">Whittier College</div>
+<div class="item" data-value="Whitworth University">Whitworth University</div>
+<div class="item" data-value="Wichita State University">Wichita State University</div>
+<div class="item" data-value="Widener University">Widener University</div>
+<div class="item" data-value="Wilberforce University">Wilberforce University</div>
+<div class="item" data-value="Wilkes University">Wilkes University</div>
+<div class="item" data-value="Willamette University">Willamette University</div>
+<div class="item" data-value="William Carey International University">William Carey International University</div>
+<div class="item" data-value="William Howard Taft University">William Howard Taft University</div>
+<div class="item" data-value="William Jessup University">William Jessup University</div>
+<div class="item" data-value="William Jewell College">William Jewell College</div>
+<div class="item" data-value="William Mitchell College of Law">William Mitchell College of Law</div>
+<div class="item" data-value="William Paterson University">William Paterson University</div>
+<div class="item" data-value="William Penn College">William Penn College</div>
+<div class="item" data-value="William Woods University">William Woods University</div>
+<div class="item" data-value="Williams Baptist College">Williams Baptist College</div>
+<div class="item" data-value="William Carey University">William Carey University</div>
+<div class="item" data-value="Williams College">Williams College</div>
+<div class="item" data-value="Wilmington College, New Castle Delaware">Wilmington College, New Castle Delaware</div>
+<div class="item" data-value="Wilmington College, Wilmington Ohio">Wilmington College, Wilmington Ohio</div>
+<div class="item" data-value="Wilson College">Wilson College</div>
+<div class="item" data-value="Wingate University">Wingate University</div>
+<div class="item" data-value="Winston-Salem State University">Winston-Salem State University</div>
+<div class="item" data-value="Winona State University">Winona State University</div>
+<div class="item" data-value="Winthrop University">Winthrop University</div>
+<div class="item" data-value="Wisconsin Lutheran College">Wisconsin Lutheran College</div>
+<div class="item" data-value="Wittenberg University">Wittenberg University</div>
+<div class="item" data-value="Wofford College">Wofford College</div>
+<div class="item" data-value="Woodbury University">Woodbury University</div>
+<div class="item" data-value="Woods Hole Oceanographic Institution">Woods Hole Oceanographic Institution</div>
+<div class="item" data-value="Worcester Polytechnic Institute">Worcester Polytechnic Institute</div>
+<div class="item" data-value="Worcester State College">Worcester State College</div>
+<div class="item" data-value="Wright Institute">Wright Institute</div>
+<div class="item" data-value="Wright State University">Wright State University</div>
+<div class="item" data-value="Xavier University, Cincinnati, OH">Xavier University, Cincinnati, OH</div>
+<div class="item" data-value="Xavier University of Louisiana">Xavier University of Louisiana</div>
+<div class="item" data-value="Yale University">Yale University</div>
+<div class="item" data-value="Yeshiva University">Yeshiva University</div>
+<div class="item" data-value="York College, York Nebraska">York College, York Nebraska</div>
+<div class="item" data-value="York College of Pennsylvania">York College of Pennsylvania</div>
+<div class="item" data-value="Youngstown State University">Youngstown State University</div>
+<div class="item" data-value="Zion Bible Institute">Zion Bible Institute</div>
+            </div>
+          </div>
         </div>
+
 
         <div class="field">
           <label>Graduation Year</label>
