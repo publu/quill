@@ -80,7 +80,7 @@ controller.sendVerificationEmail = function(email, token, callback) {
 
   var options = {
     to: email,
-    subject: "[HACKDFW] - Verify your email"
+    subject: "[HACKDFW] Proof of Hack - Verify your email"
   };
 
   var locals = {
@@ -158,15 +158,15 @@ controller.sendAcceptanceEmail = function(email, callback) {
 
   var options = {
     to: email,
-    subject: "[HACKDFW] - Lottery Results!"
+    subject: "[HACKDFW] Proof of Hack - Lottery Results!"
   };
 
   var locals = {
     title: 'You\'re in!',
     subtitle: '',
-    description: 'We at HackDFW are excited to invite you to our Hackathon!',
+    description: 'We at HackDFW are excited to invite you to Proof of Hack!',
     actionUrl: ROOT_URL,
-    actionName: "Confirm your spot"
+    actionName: "Please confirm your spot"
   };
 
   /**
@@ -193,12 +193,12 @@ controller.sendConfirmedEmail = function(email, callback){
 
   var options = {
     to: email,
-    subject: "[HACKDFW] - Confirmation"
+    subject: "[HACKDFW] Proof of Hack - Confirmation"
   };
 
   var locals = {
-    title: 'You\'re confirmed!!',
-    body: 'Can\'t wait to see you at our Hackathon!',
+    title: 'You\'re confirmed for Proof of Hack!',
+    body: 'Can\'t wait to see you!',
   };
 
   /**
